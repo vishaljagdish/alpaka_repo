@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000960] (-) JobUnselected: {'identifier': 'alpaka_chassis_description'}
+[0.001088] (-) JobUnselected: {'identifier': 'alpaka_test_tcp_description'}
+[0.001181] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_description'}
+[0.001267] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_moveit'}
+[0.001334] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_moveit_config'}
+[0.001397] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_setup'}
+[0.001458] (-) JobUnselected: {'identifier': 'alpaka_welding_gun_description'}
+[0.001517] (-) JobUnselected: {'identifier': 'bringup'}
+[0.001572] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001624] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.001675] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.001733] (ml_model) JobQueued: {'identifier': 'ml_model', 'dependencies': OrderedDict()}
+[0.001795] (ml_model) JobStarted: {'identifier': 'ml_model'}
+[0.098410] (-) TimerEvent: {}
+[0.198880] (-) TimerEvent: {}
+[0.299356] (-) TimerEvent: {}
+[0.399800] (-) TimerEvent: {}
+[0.500287] (-) TimerEvent: {}
+[0.600776] (-) TimerEvent: {}
+[0.701307] (-) TimerEvent: {}
+[0.801703] (-) TimerEvent: {}
+[0.902136] (-) TimerEvent: {}
+[1.002546] (-) TimerEvent: {}
+[1.103002] (-) TimerEvent: {}
+[1.203382] (-) TimerEvent: {}
+[1.303789] (-) TimerEvent: {}
+[1.404175] (-) TimerEvent: {}
+[1.501277] (ml_model) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ml_model', 'build', '--build-base', '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build', 'install', '--record', '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alpaka-admin', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alpaka-admin', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'MANAGERPID': '2053', 'SYSTEMD_EXEC_PID': '2228', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alpaka-admin', 'JOURNAL_STREAM': '8:12038', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alpaka-admin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/alpaka-admin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/DellM6700:@/tmp/.ICE-unix/2190,unix/DellM6700:/tmp/.ICE-unix/2190', 'INVOCATION_ID': 'c39b4a8329554b2fa097f91f04f452ae', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7B3U22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '96', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:712dc39f-782f-44fb-a781-2dd500cfa127', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.505253] (-) TimerEvent: {}
+[1.607377] (-) TimerEvent: {}
+[1.708116] (-) TimerEvent: {}
+[1.808544] (-) TimerEvent: {}
+[1.909020] (-) TimerEvent: {}
+[2.009453] (-) TimerEvent: {}
+[2.041887] (ml_model) StdoutLine: {'line': b'running egg_info\n'}
+[2.043313] (ml_model) StdoutLine: {'line': b'writing ../../build/ml_model/ml_model.egg-info/PKG-INFO\n'}
+[2.043659] (ml_model) StdoutLine: {'line': b'writing dependency_links to ../../build/ml_model/ml_model.egg-info/dependency_links.txt\n'}
+[2.043942] (ml_model) StdoutLine: {'line': b'writing entry points to ../../build/ml_model/ml_model.egg-info/entry_points.txt\n'}
+[2.044144] (ml_model) StdoutLine: {'line': b'writing requirements to ../../build/ml_model/ml_model.egg-info/requires.txt\n'}
+[2.044330] (ml_model) StdoutLine: {'line': b'writing top-level names to ../../build/ml_model/ml_model.egg-info/top_level.txt\n'}
+[2.047746] (ml_model) StdoutLine: {'line': b"reading manifest file '../../build/ml_model/ml_model.egg-info/SOURCES.txt'\n"}
+[2.048106] (ml_model) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.049001] (ml_model) StdoutLine: {'line': b"writing manifest file '../../build/ml_model/ml_model.egg-info/SOURCES.txt'\n"}
+[2.049201] (ml_model) StdoutLine: {'line': b'running build\n'}
+[2.049357] (ml_model) StdoutLine: {'line': b'running build_py\n'}
+[2.049513] (ml_model) StdoutLine: {'line': b'copying ml_model/model.py -> /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build/lib/ml_model\n'}
+[2.049858] (ml_model) StdoutLine: {'line': b'running install\n'}
+[2.050559] (ml_model) StdoutLine: {'line': b'running install_lib\n'}
+[2.051803] (ml_model) StdoutLine: {'line': b'copying /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build/lib/ml_model/model.py -> /home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages/ml_model\n'}
+[2.052636] (ml_model) StdoutLine: {'line': b'byte-compiling /home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages/ml_model/model.py to model.cpython-310.pyc\n'}
+[2.054384] (ml_model) StdoutLine: {'line': b'running install_data\n'}
+[2.054630] (ml_model) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.057681] (ml_model) StdoutLine: {'line': b"removing '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages/ml_model-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.058301] (ml_model) StdoutLine: {'line': b'Copying ../../build/ml_model/ml_model.egg-info to /home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages/ml_model-0.0.0-py3.10.egg-info\n'}
+[2.059914] (ml_model) StdoutLine: {'line': b'running install_scripts\n'}
+[2.096958] (ml_model) StdoutLine: {'line': b'Installing ml_model_node script to /home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/ml_model\n'}
+[2.097565] (ml_model) StdoutLine: {'line': b"writing list of installed files to '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log'\n"}
+[2.109562] (-) TimerEvent: {}
+[2.156967] (ml_model) CommandEnded: {'returncode': 0}
+[2.176766] (ml_model) JobEnded: {'identifier': 'ml_model', 'rc': 0}
+[2.177813] (-) EventReactorShutdown: {}

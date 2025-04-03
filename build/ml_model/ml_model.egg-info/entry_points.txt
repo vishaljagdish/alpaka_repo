@@ -1,0 +1,3 @@
+[console_scripts]
+ml_model_node = ml_model.model:main
+

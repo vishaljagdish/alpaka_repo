@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+	<xacro:macro name="test_tcp" params="
+		prefix
+		parent">
+		<material name="black">
+			<color rgba="0 0 0 1" />
+		</material>
+		<!--Link definitions-->
+		<link name="${prefix}test_tcp_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_test_tcp_description/meshes/visual/test_tcp_link_visual.STL" />
+				</geometry>
+				<material name="black" />
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_test_tcp_description/meshes/collision/test_tcp_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+		<link name="${prefix}tcp_camera_link" />
+		<link name="tcp_endpoint_link" />
+		<joint name="base_test_tcp_joint" type="fixed">
+			<parent link="${parent}" />
+			<child link="${prefix}test_tcp_link" />
+			<origin xyz="0 0 0" rpy="0 0 0" />
+		</joint>
+		<joint name="tcp_camera_joint" type="fixed">
+			<parent link="${prefix}test_tcp_link" />
+			<child link="tcp_camera_link" />
+			<origin xyz="0 -0.0475 0.008" rpy="0 0 0" />
+		</joint>
+		<joint name="tcp_endpoint_joint" type="fixed">
+			<parent link="test_tcp_link" />
+			<child link="tcp_endpoint_link" />
+			<origin xyz="0 0 0.15" rpy="0 0 0" />
+		</joint>
+	</xacro:macro>
+</robot>
+

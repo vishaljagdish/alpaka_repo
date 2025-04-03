@@ -1,0 +1,36 @@
+[0.063s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description -- -j8 -l8
+[0.263s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=71 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description -- -j8 -l8
+[0.264s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=71 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description
+[0.266s] -- Install configuration: ""
+[0.266s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes
+[0.266s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/visual
+[0.266s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/visual/welding_gun_tourch_link.STL
+[0.267s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/visual/welding_gun_clamp_link.STL
+[0.267s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/visual/welding_gun_mount_link.STL
+[0.267s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/collision
+[0.267s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/collision/welding_gun_tourch_link_collision.STL
+[0.267s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/collision/welding_gun_clamp_link_collision.STL
+[0.268s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/meshes/collision/welding_gun_mount_link_collision.STL
+[0.268s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/urdf
+[0.268s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/urdf/welding_gun.urdf.xacro
+[0.268s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/urdf/welding_gun_macro.xacro
+[0.269s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/launch
+[0.269s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/launch/view_welding_gun.launch.py
+[0.269s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/rviz
+[0.269s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/rviz/view_welding_gun.rviz
+[0.269s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_gun_description
+[0.270s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_gun_description
+[0.270s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/environment/ament_prefix_path.sh
+[0.270s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/environment/ament_prefix_path.dsv
+[0.270s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/environment/path.sh
+[0.271s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/environment/path.dsv
+[0.271s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/local_setup.bash
+[0.271s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/local_setup.sh
+[0.271s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/local_setup.zsh
+[0.271s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/local_setup.dsv
+[0.272s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.dsv
+[0.272s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/ament_index/resource_index/packages/alpaka_welding_gun_description
+[0.272s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/cmake/alpaka_welding_gun_descriptionConfig.cmake
+[0.273s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/cmake/alpaka_welding_gun_descriptionConfig-version.cmake
+[0.273s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.xml
+[0.889s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=71 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description

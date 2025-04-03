@@ -1,0 +1,27 @@
+[0.075s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=27 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description -- -j8 -l8
+[0.183s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=27 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description -- -j8 -l8
+[0.232s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=27 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description
+[0.301s] -- Install configuration: ""
+[0.303s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/urdf
+[0.304s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/urdf/welding_cobot.urdf.xacro
+[0.304s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/urdf/welding_cobot.urdf~
+[0.304s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/launch
+[0.305s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/launch/view_welding_cobot.launch.py
+[0.305s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/rviz
+[0.305s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/rviz/view_welding_cobot.rviz
+[0.305s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_cobot_description
+[0.306s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_cobot_description
+[0.306s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/environment/ament_prefix_path.sh
+[0.313s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/environment/ament_prefix_path.dsv
+[0.313s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/environment/path.sh
+[0.313s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/environment/path.dsv
+[0.313s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/local_setup.bash
+[0.314s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/local_setup.sh
+[0.314s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/local_setup.zsh
+[0.314s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/local_setup.dsv
+[0.314s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.dsv
+[0.314s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/ament_index/resource_index/packages/alpaka_welding_cobot_description
+[0.314s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/cmake/alpaka_welding_cobot_descriptionConfig.cmake
+[0.315s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/cmake/alpaka_welding_cobot_descriptionConfig-version.cmake
+[0.315s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.xml
+[0.369s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=27 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description

@@ -1,0 +1,29 @@
+[0.062s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=220 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.230s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.275s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[8.437s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.437s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.438s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.438s]                  from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:5[m[K,
+[8.438s]                  from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:1[m[K:
+[8.438s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.438s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:62:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotationn[m[K’; did you mean ‘[01m[Krotation[m[K’?
+[8.439s]    62 | CLCPP_INFO(LOGGER, "O_y: %f", transform_tcp_tool0.transform.[01;31m[Krotationn[m[K.y);
+[8.439s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[8.439s] 
+[8.442s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:80:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotationn[m[K’; did you mean ‘[01m[Krotation[m[K’?
+[8.442s]    80 | PP_INFO(LOGGER, "O_y: %f", transform_camera_world.transform.[01;31m[Krotationn[m[K.y);
+[8.442s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[8.442s] 
+[15.173s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[15.174s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[15.174s] gmake: *** [Makefile:146: all] Error 2
+[15.177s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=220 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

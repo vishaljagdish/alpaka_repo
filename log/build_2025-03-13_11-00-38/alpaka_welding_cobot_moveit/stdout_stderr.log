@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:38:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void MlReceiverMoveitNode::onPointReceiveCallback([01;35m[Kconst geometry_msgs::msg::Point::SharedPtr msg[m[K){
+      |                                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 66%] [32m[1mLinking CXX executable alpaka_welding_cobot_moveit[0m
+[100%] Built target alpaka_welding_cobot_moveit
+-- Install configuration: ""
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/launch
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/launch/alpaka_welding_cobot_moveit.launch.py
+-- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/alpaka_welding_cobot_moveit/alpaka_welding_cobot_moveit
+-- Set runtime path of "/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/alpaka_welding_cobot_moveit/alpaka_welding_cobot_moveit" to ""
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_cobot_moveit
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_cobot_moveit
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/ament_prefix_path.sh
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/path.sh
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/path.dsv
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.bash
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.sh
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.zsh
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.dsv
+-- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.dsv
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/packages/alpaka_welding_cobot_moveit
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/cmake/alpaka_welding_cobot_moveitConfig.cmake
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/cmake/alpaka_welding_cobot_moveitConfig-version.cmake
+-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.xml

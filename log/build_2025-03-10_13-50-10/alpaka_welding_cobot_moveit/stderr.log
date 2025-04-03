@@ -1,0 +1,18 @@
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:8:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMlReceieverMoveitNode[m[K’ does not name a type; did you mean ‘[01m[KMlReceiverMoveitNode[m[K’?
+    8 | [01;31m[KMlReceieverMoveitNode[m[K::MlReceiverMoveitNode(const rclcpp::NodeOptions options):rclcpp::Node("ml_receiver", options),
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      | [32m[KMlReceiverMoveitNode[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:38:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr) const[m[K’
+   38 | void [01;31m[KMlReceiverMoveitNode[m[K::onPointReceiveCallback(const geometry_msgs::msg::Point::SharedPtr msg) const{
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:1[m[K:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:27:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’
+   27 |     void [01;36m[KonPointReceiveCallback[m[K(const geometry_msgs::msg::Pose::SharedPtr msg);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MlReceiverMoveitNode[m[K’ defined here
+   21 | class [01;36m[KMlReceiverMoveitNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

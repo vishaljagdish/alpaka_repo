@@ -1,0 +1,11 @@
+[0.073s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=26 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.247s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.282s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[8.995s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.995s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:57:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+[8.995s]    57 |     nomQuaternion = normalizQuaternion(msg->[01;31m[Korientation[m[K);
+[8.995s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[16.137s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[16.137s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[16.138s] gmake: *** [Makefile:146: all] Error 2
+[16.143s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=26 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

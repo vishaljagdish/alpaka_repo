@@ -1,0 +1,100 @@
+[0.025s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=89 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera -- -j8 -l8
+[0.108s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.113s] [  9%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[0.113s] [ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.118s] [ 18%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[0.119s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[0.119s] [ 27%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[0.128s] [ 31%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[0.131s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[2.211s] [ 40%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[2.301s] [ 40%] Built target gtest_main
+[2.321s] [ 45%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[10.869s] [ 50%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[11.192s] [ 50%] Built target realsense2_camera_node
+[11.219s] [ 54%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[12.384s] [ 59%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[19.588s] [ 63%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[21.049s] [ 68%] [32m[1mLinking CXX static library libgtest.a[0m
+[21.134s] [ 68%] Built target gtest
+[21.153s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[21.493s] [ 77%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[27.034s] [ 81%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o[0m
+[27.501s] [ 86%] [32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o[0m
+[29.833s] [ 90%] [32m[1mLinking CXX executable gtest_template[0m
+[30.080s] [ 90%] Built target gtest_template
+[30.101s] [ 95%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o[0m
+[44.750s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[45.541s] [100%] Built target realsense2_camera
+[45.565s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=89 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera -- -j8 -l8
+[45.570s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=89 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera
+[45.584s] -- Install configuration: "Release"
+[45.584s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[45.585s] -- Set runtime path of "/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""
+[45.585s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[45.590s] -- Set runtime path of "/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/librealsense2_camera.so" to ""
+[45.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include
+[45.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/gl_window.h
+[45.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/image_publisher.h
+[45.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/ros_utils.h
+[45.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/named_filter.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/sensor_params.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/profile_manager.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/dynamic_params.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/ros_param_backend.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/ros_sensor.h
+[45.592s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/realsense_node_factory.h
+[45.593s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/base_realsense_node.h
+[45.593s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/include/constants.h
+[45.593s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/launch
+[45.593s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[45.593s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz
+[45.594s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[45.595s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag
+[45.596s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[45.597s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config
+[45.598s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[45.598s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[45.598s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[45.598s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[45.598s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[45.599s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[45.599s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[45.599s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[45.599s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[45.600s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[45.600s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[45.600s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[45.601s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[45.601s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[45.601s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[45.601s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[45.602s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[45.602s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[45.602s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[45.602s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[45.602s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[45.603s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[45.603s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[45.610s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=89 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera

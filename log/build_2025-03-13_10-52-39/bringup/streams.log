@@ -1,0 +1,22 @@
+[0.152s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=226 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup -- -j8 -l8
+[0.688s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=226 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup -- -j8 -l8
+[0.690s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=226 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup
+[0.704s] -- Install configuration: ""
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch/alpaka.launch.py
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/environment/ament_prefix_path.sh
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/environment/ament_prefix_path.dsv
+[0.705s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/environment/path.sh
+[0.706s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/environment/path.dsv
+[0.709s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/local_setup.bash
+[0.710s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/local_setup.sh
+[0.710s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/local_setup.zsh
+[0.710s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/local_setup.dsv
+[0.711s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.dsv
+[0.711s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/ament_index/resource_index/packages/bringup
+[0.711s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/cmake/bringupConfig.cmake
+[0.711s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/cmake/bringupConfig-version.cmake
+[0.713s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.xml
+[0.719s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=226 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup

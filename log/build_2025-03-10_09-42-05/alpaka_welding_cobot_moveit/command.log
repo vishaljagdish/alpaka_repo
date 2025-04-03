@@ -1,0 +1,1 @@
+Invoking command in '/home/alpaka-admin/camera_cobot_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ros2_ws/install/realsense_subscriber:/home/alpaka-admin/ros2_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=12 /usr/bin/cmake --build /home/alpaka-admin/camera_cobot_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

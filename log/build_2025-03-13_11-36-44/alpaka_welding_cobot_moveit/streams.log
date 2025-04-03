@@ -1,0 +1,32 @@
+[0.027s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.159s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[11.156s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.156s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:65:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[11.156s]    65 |     pointOffset.position.x = transform_tcp_tool0.transform.[01;31m[Kposition[m[K.x;
+[11.156s]       |                                                            [01;31m[K^~~~~~~~[m[K
+[11.156s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:66:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[11.156s]    66 |     pointOffset.position.y = transform_tcp_tool0.transform.[01;31m[Kposition[m[K.y;
+[11.157s]       |                                                            [01;31m[K^~~~~~~~[m[K
+[11.157s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:67:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[11.157s]    67 |     pointOffset.position.z = transform_tcp_tool0.transform.[01;31m[Kposition[m[K.z;
+[11.157s]       |                                                            [01;31m[K^~~~~~~~[m[K
+[11.157s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:73:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Pose = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kx[m[K’
+[11.157s]    73 |     target_pose.position.x = msg->x + pointOffset.[01;31m[Kx[m[K;
+[11.157s]       |                                                   [01;31m[K^[m[K
+[11.157s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:74:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Pose = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+[11.158s]    74 |     target_pose.position.y = msg->y + pointOffset.[01;31m[Ky[m[K;
+[11.158s]       |                                                   [01;31m[K^[m[K
+[11.158s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:75:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Pose = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kz[m[K’
+[11.158s]    75 |     target_pose.position.z = msg->z + pointOffset.[01;31m[Kz[m[K;
+[11.158s]       |                                                   [01;31m[K^[m[K
+[11.158s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:77:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktarget_pose[m[K’
+[11.158s]    77 |     target_pose.orientation.x = pointOffset.orientation.x
+[11.158s]       |                                                          [01;31m[K^[m[K
+[11.158s]       |                                                          [32m[K;[m[K
+[11.159s]    78 |     [32m[Ktarget_pose[m[K.orientation.y = pointOffset.orientation.y;
+[11.159s]       |     [32m[K~~~~~~~~~~~[m[K                                           
+[18.048s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[18.048s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[18.049s] gmake: *** [Makefile:146: all] Error 2
+[18.053s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

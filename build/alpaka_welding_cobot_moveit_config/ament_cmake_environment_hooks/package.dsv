@@ -1,0 +1,4 @@
+source;share/alpaka_welding_cobot_moveit_config/local_setup.bash
+source;share/alpaka_welding_cobot_moveit_config/local_setup.dsv
+source;share/alpaka_welding_cobot_moveit_config/local_setup.sh
+source;share/alpaka_welding_cobot_moveit_config/local_setup.zsh

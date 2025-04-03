@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+	<xacro:macro name="chassis" params="
+		prefix
+		parent
+		arm_angle">
+
+		<!--Link definitions-->
+		<link name="${prefix}chassis_base_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_chassis_description/meshes/visual/chassis_base_link.STL" />
+				</geometry>
+				<material name="">
+					<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_chassis_description/meshes/collision/chassis_base_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+
+		<link name="${prefix}chassis_arm_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_chassis_description/meshes/visual/chassis_arm_link.STL" />
+				</geometry>
+				<material name="">
+					<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_chassis_description/meshes/collision/chassis_arm_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+
+		<link name="${prefix}chassis_cobot_attachment_link">
+		</link>
+
+		<!--Joint  definitions-->
+
+		<joint name="${prefix}chassis_parent-base_joint" type="fixed">
+			<parent link="${parent}"/>
+			<child link="${prefix}chassis_base_link"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+		</joint>
+
+		<joint name="${prefix}chassis_base-arm_attachment_joint" type="fixed">
+			<parent link="${prefix}chassis_base_link" />
+			<child link="${prefix}chassis_arm_link" />
+			<origin xyz="0 -0.062 1.3795" rpy="0 0 ${arm_angle}" />
+		</joint>
+
+		<joint name="${prefix}chassis_arm-cobot_attachment_joint" type="fixed">
+			<parent link="${prefix}chassis_arm_link" />
+			<child link="${prefix}chassis_cobot_attachment_link" />
+			<origin xyz="0 1.0783 0.42491" rpy="3.1416 0 0" />
+		</joint>
+		
+	</xacro:macro>
+</robot>

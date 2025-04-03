@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.001093] (-) JobUnselected: {'identifier': 'alpaka_chassis_description'}
+[0.001178] (-) JobUnselected: {'identifier': 'alpaka_test_tcp_description'}
+[0.001234] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_description'}
+[0.001293] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_moveit_config'}
+[0.001341] (-) JobUnselected: {'identifier': 'alpaka_welding_cobot_setup'}
+[0.001546] (-) JobUnselected: {'identifier': 'alpaka_welding_gun_description'}
+[0.001603] (-) JobUnselected: {'identifier': 'bringup'}
+[0.001651] (-) JobUnselected: {'identifier': 'ml_model'}
+[0.001697] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001744] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.001790] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.001841] (alpaka_welding_cobot_moveit) JobQueued: {'identifier': 'alpaka_welding_cobot_moveit', 'dependencies': OrderedDict()}
+[0.001896] (alpaka_welding_cobot_moveit) JobStarted: {'identifier': 'alpaka_welding_cobot_moveit'}
+[0.017483] (alpaka_welding_cobot_moveit) JobProgress: {'identifier': 'alpaka_welding_cobot_moveit', 'progress': 'cmake'}
+[0.018482] (alpaka_welding_cobot_moveit) JobProgress: {'identifier': 'alpaka_welding_cobot_moveit', 'progress': 'build'}
+[0.019715] (alpaka_welding_cobot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit', '--', '-j8', '-l8'], 'cwd': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alpaka-admin'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alpaka-admin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1873'), ('SYSTEMD_EXEC_PID', '2045'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alpaka-admin'), ('JOURNAL_STREAM', '8:16558'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alpaka-admin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/alpaka-admin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/DellM6700:@/tmp/.ICE-unix/2016,unix/DellM6700:/tmp/.ICE-unix/2016'), ('INVOCATION_ID', 'acddc29dfed242a6a836d2c4950efdb8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NF1A32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:47ad0c5a-d423-4875-911b-d1d46a72880d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble')]), 'shell': False}
+[0.099354] (-) TimerEvent: {}
+[0.111947] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit\x1b[0m\n'}
+[0.164687] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o\x1b[0m\n'}
+[0.199485] (-) TimerEvent: {}
+[0.299877] (-) TimerEvent: {}
+[0.400242] (-) TimerEvent: {}
+[0.500604] (-) TimerEvent: {}
+[0.600987] (-) TimerEvent: {}
+[0.701344] (-) TimerEvent: {}
+[0.801701] (-) TimerEvent: {}
+[0.902049] (-) TimerEvent: {}
+[1.002406] (-) TimerEvent: {}
+[1.102769] (-) TimerEvent: {}
+[1.203163] (-) TimerEvent: {}
+[1.303557] (-) TimerEvent: {}
+[1.403922] (-) TimerEvent: {}
+[1.504304] (-) TimerEvent: {}
+[1.604669] (-) TimerEvent: {}
+[1.705045] (-) TimerEvent: {}
+[1.805429] (-) TimerEvent: {}
+[1.905793] (-) TimerEvent: {}
+[2.006174] (-) TimerEvent: {}
+[2.106573] (-) TimerEvent: {}
+[2.206942] (-) TimerEvent: {}
+[2.307335] (-) TimerEvent: {}
+[2.407709] (-) TimerEvent: {}
+[2.508088] (-) TimerEvent: {}
+[2.608468] (-) TimerEvent: {}
+[2.708832] (-) TimerEvent: {}
+[2.809223] (-) TimerEvent: {}
+[2.909601] (-) TimerEvent: {}
+[3.009992] (-) TimerEvent: {}
+[3.110364] (-) TimerEvent: {}
+[3.210745] (-) TimerEvent: {}
+[3.311125] (-) TimerEvent: {}
+[3.411495] (-) TimerEvent: {}
+[3.511872] (-) TimerEvent: {}
+[3.612272] (-) TimerEvent: {}
+[3.712648] (-) TimerEvent: {}
+[3.813033] (-) TimerEvent: {}
+[3.913412] (-) TimerEvent: {}
+[4.013803] (-) TimerEvent: {}
+[4.114195] (-) TimerEvent: {}
+[4.214571] (-) TimerEvent: {}
+[4.314981] (-) TimerEvent: {}
+[4.415352] (-) TimerEvent: {}
+[4.515722] (-) TimerEvent: {}
+[4.616111] (-) TimerEvent: {}
+[4.716482] (-) TimerEvent: {}
+[4.816864] (-) TimerEvent: {}
+[4.917260] (-) TimerEvent: {}
+[5.017643] (-) TimerEvent: {}
+[5.118028] (-) TimerEvent: {}
+[5.218405] (-) TimerEvent: {}
+[5.318769] (-) TimerEvent: {}
+[5.419137] (-) TimerEvent: {}
+[5.519502] (-) TimerEvent: {}
+[5.619877] (-) TimerEvent: {}
+[5.720262] (-) TimerEvent: {}
+[5.820651] (-) TimerEvent: {}
+[5.921036] (-) TimerEvent: {}
+[6.021404] (-) TimerEvent: {}
+[6.121799] (-) TimerEvent: {}
+[6.222176] (-) TimerEvent: {}
+[6.322549] (-) TimerEvent: {}
+[6.422913] (-) TimerEvent: {}
+[6.523290] (-) TimerEvent: {}
+[6.623674] (-) TimerEvent: {}
+[6.724054] (-) TimerEvent: {}
+[6.824544] (-) TimerEvent: {}
+[6.925031] (-) TimerEvent: {}
+[7.025472] (-) TimerEvent: {}
+[7.125849] (-) TimerEvent: {}
+[7.226234] (-) TimerEvent: {}
+[7.326618] (-) TimerEvent: {}
+[7.427006] (-) TimerEvent: {}
+[7.527380] (-) TimerEvent: {}
+[7.627754] (-) TimerEvent: {}
+[7.728157] (-) TimerEvent: {}
+[7.828562] (-) TimerEvent: {}
+[7.928952] (-) TimerEvent: {}
+[8.029337] (-) TimerEvent: {}
+[8.129704] (-) TimerEvent: {}
+[8.230106] (-) TimerEvent: {}
+[8.330463] (-) TimerEvent: {}
+[8.430837] (-) TimerEvent: {}
+[8.485035] (alpaka_welding_cobot_moveit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.485328] (alpaka_welding_cobot_moveit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:38:94:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.485461] (alpaka_welding_cobot_moveit) StderrLine: {'line': b'   38 | void MlReceiverMoveitNode::onPointReceiveCallback(\x1b[01;35m\x1b[Kconst geometry_msgs::msg::Point::SharedPtr msg\x1b[m\x1b[K){\n'}
+[8.485583] (alpaka_welding_cobot_moveit) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.530982] (-) TimerEvent: {}
+[8.631387] (-) TimerEvent: {}
+[8.731779] (-) TimerEvent: {}
+[8.832166] (-) TimerEvent: {}
+[8.932530] (-) TimerEvent: {}
+[9.032890] (-) TimerEvent: {}
+[9.133274] (-) TimerEvent: {}
+[9.233665] (-) TimerEvent: {}
+[9.334051] (-) TimerEvent: {}
+[9.434433] (-) TimerEvent: {}
+[9.534811] (-) TimerEvent: {}
+[9.635209] (-) TimerEvent: {}
+[9.735597] (-) TimerEvent: {}
+[9.835985] (-) TimerEvent: {}
+[9.936360] (-) TimerEvent: {}
+[10.036747] (-) TimerEvent: {}
+[10.137138] (-) TimerEvent: {}
+[10.237515] (-) TimerEvent: {}
+[10.337887] (-) TimerEvent: {}
+[10.438268] (-) TimerEvent: {}
+[10.538644] (-) TimerEvent: {}
+[10.639051] (-) TimerEvent: {}
+[10.739426] (-) TimerEvent: {}
+[10.839812] (-) TimerEvent: {}
+[10.940198] (-) TimerEvent: {}
+[11.040572] (-) TimerEvent: {}
+[11.140938] (-) TimerEvent: {}
+[11.241329] (-) TimerEvent: {}
+[11.341712] (-) TimerEvent: {}
+[11.442047] (-) TimerEvent: {}
+[11.542453] (-) TimerEvent: {}
+[11.642824] (-) TimerEvent: {}
+[11.743200] (-) TimerEvent: {}
+[11.843637] (-) TimerEvent: {}
+[11.944033] (-) TimerEvent: {}
+[12.044410] (-) TimerEvent: {}
+[12.144774] (-) TimerEvent: {}
+[12.245149] (-) TimerEvent: {}
+[12.345509] (-) TimerEvent: {}
+[12.445859] (-) TimerEvent: {}
+[12.546229] (-) TimerEvent: {}
+[12.646587] (-) TimerEvent: {}
+[12.746975] (-) TimerEvent: {}
+[12.847367] (-) TimerEvent: {}
+[12.947747] (-) TimerEvent: {}
+[13.048130] (-) TimerEvent: {}
+[13.148500] (-) TimerEvent: {}
+[13.248870] (-) TimerEvent: {}
+[13.349272] (-) TimerEvent: {}
+[13.449650] (-) TimerEvent: {}
+[13.550038] (-) TimerEvent: {}
+[13.650414] (-) TimerEvent: {}
+[13.750780] (-) TimerEvent: {}
+[13.851157] (-) TimerEvent: {}
+[13.951539] (-) TimerEvent: {}
+[14.051920] (-) TimerEvent: {}
+[14.152304] (-) TimerEvent: {}
+[14.252680] (-) TimerEvent: {}
+[14.353060] (-) TimerEvent: {}
+[14.453457] (-) TimerEvent: {}
+[14.553824] (-) TimerEvent: {}
+[14.654218] (-) TimerEvent: {}
+[14.754591] (-) TimerEvent: {}
+[14.854993] (-) TimerEvent: {}
+[14.955392] (-) TimerEvent: {}
+[15.055790] (-) TimerEvent: {}
+[15.156190] (-) TimerEvent: {}
+[15.256559] (-) TimerEvent: {}
+[15.356914] (-) TimerEvent: {}
+[15.457310] (-) TimerEvent: {}
+[15.557701] (-) TimerEvent: {}
+[15.658089] (-) TimerEvent: {}
+[15.758489] (-) TimerEvent: {}
+[15.858867] (-) TimerEvent: {}
+[15.959284] (-) TimerEvent: {}
+[16.059689] (-) TimerEvent: {}
+[16.160042] (-) TimerEvent: {}
+[16.260410] (-) TimerEvent: {}
+[16.360766] (-) TimerEvent: {}
+[16.461138] (-) TimerEvent: {}
+[16.561506] (-) TimerEvent: {}
+[16.661859] (-) TimerEvent: {}
+[16.762228] (-) TimerEvent: {}
+[16.862582] (-) TimerEvent: {}
+[16.962914] (-) TimerEvent: {}
+[17.063258] (-) TimerEvent: {}
+[17.163606] (-) TimerEvent: {}
+[17.263966] (-) TimerEvent: {}
+[17.364330] (-) TimerEvent: {}
+[17.464682] (-) TimerEvent: {}
+[17.565051] (-) TimerEvent: {}
+[17.665378] (-) TimerEvent: {}
+[17.765814] (-) TimerEvent: {}
+[17.866254] (-) TimerEvent: {}
+[17.966676] (-) TimerEvent: {}
+[18.067122] (-) TimerEvent: {}
+[18.167555] (-) TimerEvent: {}
+[18.267997] (-) TimerEvent: {}
+[18.368425] (-) TimerEvent: {}
+[18.468854] (-) TimerEvent: {}
+[18.569298] (-) TimerEvent: {}
+[18.669723] (-) TimerEvent: {}
+[18.770169] (-) TimerEvent: {}
+[18.870524] (-) TimerEvent: {}
+[18.970874] (-) TimerEvent: {}
+[19.071233] (-) TimerEvent: {}
+[19.171605] (-) TimerEvent: {}
+[19.272159] (-) TimerEvent: {}
+[19.372753] (-) TimerEvent: {}
+[19.473121] (-) TimerEvent: {}
+[19.573492] (-) TimerEvent: {}
+[19.673859] (-) TimerEvent: {}
+[19.774308] (-) TimerEvent: {}
+[19.874728] (-) TimerEvent: {}
+[19.975175] (-) TimerEvent: {}
+[20.075520] (-) TimerEvent: {}
+[20.175940] (-) TimerEvent: {}
+[20.276346] (-) TimerEvent: {}
+[20.376696] (-) TimerEvent: {}
+[20.477049] (-) TimerEvent: {}
+[20.577408] (-) TimerEvent: {}
+[20.677759] (-) TimerEvent: {}
+[20.778138] (-) TimerEvent: {}
+[20.878519] (-) TimerEvent: {}
+[20.976076] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable alpaka_welding_cobot_moveit\x1b[0m\n'}
+[20.978654] (-) TimerEvent: {}
+[21.079156] (-) TimerEvent: {}
+[21.179599] (-) TimerEvent: {}
+[21.280053] (-) TimerEvent: {}
+[21.380554] (-) TimerEvent: {}
+[21.480980] (-) TimerEvent: {}
+[21.581390] (-) TimerEvent: {}
+[21.681791] (-) TimerEvent: {}
+[21.782195] (-) TimerEvent: {}
+[21.882616] (-) TimerEvent: {}
+[21.983050] (-) TimerEvent: {}
+[22.068564] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'[100%] Built target alpaka_welding_cobot_moveit\n'}
+[22.083182] (-) TimerEvent: {}
+[22.091293] (alpaka_welding_cobot_moveit) CommandEnded: {'returncode': 0}
+[22.093346] (alpaka_welding_cobot_moveit) JobProgress: {'identifier': 'alpaka_welding_cobot_moveit', 'progress': 'install'}
+[22.112876] (alpaka_welding_cobot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit'], 'cwd': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alpaka-admin'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alpaka-admin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1873'), ('SYSTEMD_EXEC_PID', '2045'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alpaka-admin'), ('JOURNAL_STREAM', '8:16558'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alpaka-admin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/alpaka-admin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/DellM6700:@/tmp/.ICE-unix/2016,unix/DellM6700:/tmp/.ICE-unix/2016'), ('INVOCATION_ID', 'acddc29dfed242a6a836d2c4950efdb8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NF1A32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:47ad0c5a-d423-4875-911b-d1d46a72880d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera:/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble')]), 'shell': False}
+[22.128397] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.128950] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/launch\n'}
+[22.129251] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/launch/alpaka_welding_cobot_moveit.launch.py\n'}
+[22.129569] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/alpaka_welding_cobot_moveit/alpaka_welding_cobot_moveit\n'}
+[22.136259] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Set runtime path of "/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/alpaka_welding_cobot_moveit/alpaka_welding_cobot_moveit" to ""\n'}
+[22.136781] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_cobot_moveit\n'}
+[22.137211] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_cobot_moveit\n'}
+[22.137593] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/ament_prefix_path.sh\n'}
+[22.137912] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/ament_prefix_path.dsv\n'}
+[22.138210] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/path.sh\n'}
+[22.138551] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/environment/path.dsv\n'}
+[22.138840] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.bash\n'}
+[22.139098] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.sh\n'}
+[22.139359] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.zsh\n'}
+[22.139584] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/local_setup.dsv\n'}
+[22.139798] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.dsv\n'}
+[22.140026] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/ament_index/resource_index/packages/alpaka_welding_cobot_moveit\n'}
+[22.140314] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/cmake/alpaka_welding_cobot_moveitConfig.cmake\n'}
+[22.140497] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/cmake/alpaka_welding_cobot_moveitConfig-version.cmake\n'}
+[22.140678] (alpaka_welding_cobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.xml\n'}
+[22.142053] (alpaka_welding_cobot_moveit) CommandEnded: {'returncode': 0}
+[22.183437] (-) TimerEvent: {}
+[22.224039] (alpaka_welding_cobot_moveit) JobEnded: {'identifier': 'alpaka_welding_cobot_moveit', 'rc': 0}
+[22.227377] (-) EventReactorShutdown: {}

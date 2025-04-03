@@ -1,0 +1,4 @@
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:62:36:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Krotation_x_180[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   62 |     geometry_msgs::msg::Quaternion [01;35m[Krotation_x_180[m[K = this->createRotationX180();
+      |                                    [01;35m[K^~~~~~~~~~~~~~[m[K

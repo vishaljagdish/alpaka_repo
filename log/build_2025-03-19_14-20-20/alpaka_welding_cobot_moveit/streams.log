@@ -1,0 +1,12 @@
+[0.077s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=82 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.362s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.395s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[11.812s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In constructor ‘[01m[KMlReceiverMoveitNode::MlReceiverMoveitNode(rclcpp::NodeOptions)[m[K’:
+[11.812s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’ has no member named ‘[01m[Kset_pose_reference_frame[m[K’; did you mean ‘[01m[KsetPoseReferenceFrame[m[K’?
+[11.812s]    19 |     move_group_.[01;31m[Kset_pose_reference_frame[m[K("base");
+[11.812s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.812s]       |                 [32m[KsetPoseReferenceFrame[m[K
+[20.796s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[20.796s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[20.796s] gmake: *** [Makefile:146: all] Error 2
+[20.800s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=82 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

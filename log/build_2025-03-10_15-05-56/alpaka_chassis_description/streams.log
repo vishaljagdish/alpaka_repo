@@ -1,0 +1,34 @@
+[0.108s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=47 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description -- -j8 -l8
+[0.321s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=47 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description -- -j8 -l8
+[0.339s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=47 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description
+[0.405s] -- Install configuration: ""
+[0.405s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes
+[0.408s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual
+[0.409s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual/chassis_base_link.STL
+[0.409s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual/chassis_arm_link.STL
+[0.409s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/collision
+[0.409s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/collision/chassis_base_link_collision.STL
+[0.409s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/collision/chassis_arm_link_collision.STL
+[0.410s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/urdf
+[0.410s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/urdf/chassis_macro.xacro
+[0.410s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/urdf/chassis.urdf.xacro
+[0.410s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/launch
+[0.410s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/launch/view_chassis.launch.py
+[0.411s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/rviz
+[0.411s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/rviz/view_chassis.rviz
+[0.415s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/ament_index/resource_index/package_run_dependencies/alpaka_chassis_description
+[0.417s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/ament_index/resource_index/parent_prefix_path/alpaka_chassis_description
+[0.417s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/environment/ament_prefix_path.sh
+[0.418s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/environment/ament_prefix_path.dsv
+[0.418s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/environment/path.sh
+[0.418s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/environment/path.dsv
+[0.418s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/local_setup.bash
+[0.420s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/local_setup.sh
+[0.453s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/local_setup.zsh
+[0.453s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/local_setup.dsv
+[0.453s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.dsv
+[0.456s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/ament_index/resource_index/packages/alpaka_chassis_description
+[0.456s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/cmake/alpaka_chassis_descriptionConfig.cmake
+[0.457s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/cmake/alpaka_chassis_descriptionConfig-version.cmake
+[0.457s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.xml
+[0.689s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=47 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description

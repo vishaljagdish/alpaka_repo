@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:57:40:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kgeometry_msgs::msg::Quaternion[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’}
+   57 |     nomQuaternion = normalizQuaternion([01;31m[K1.0[m[K);
+      |                                        [01;31m[K^~~[m[K
+      |                                        [01;31m[K|[m[K
+      |                                        [01;31m[Kdouble[m[K
+In file included from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:1[m[K:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:31:86:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kgeometry_msgs::msg::Quaternion MlReceiverMoveitNode::normalizQuaternion(geometry_msgs::msg::Quaternion)[m[K’
+   31 |     geometry_msgs::msg::Quaternion normalizQuaternion([01;36m[Kgeometry_msgs::msg::Quaternion q[m[K);
+      |                                                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,293 @@
+[0.666s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ml_model']
+[0.666s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ml_model'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], bazel_args=None, bazel_task=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, meson_args=[], ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_alias.argument_parser.alias.AliasArgumentDecorator object at 0x7db81f8a9ff0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7db81f8a9150>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7db81f8a9150>>, mixin_verb=('build',))
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.099s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alpaka-admin/my_alpaka_urdf_ws'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'bazel'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'meson'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'bazel'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'meson'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['ignore', 'ignore_ament_install']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ignore'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ignore_ament_install'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['colcon_pkg']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'colcon_pkg'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['colcon_meta']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'colcon_meta'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['ros']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ros'
+[1.120s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_chassis_description' with type 'ros.ament_cmake' and name 'alpaka_chassis_description'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['ignore', 'ignore_ament_install']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ignore'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ignore_ament_install'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['colcon_pkg']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'colcon_pkg'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['colcon_meta']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'colcon_meta'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['ros']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ros'
+[1.123s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_test_tcp_description' with type 'ros.ament_cmake' and name 'alpaka_test_tcp_description'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ignore'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ignore_ament_install'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['colcon_pkg']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'colcon_pkg'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['colcon_meta']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'colcon_meta'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['ros']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ros'
+[1.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_description' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_description'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ignore'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ignore_ament_install'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['colcon_pkg']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'colcon_pkg'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['colcon_meta']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'colcon_meta'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['ros']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ros'
+[1.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_moveit' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_moveit'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ignore'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ignore_ament_install'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['colcon_pkg']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'colcon_pkg'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['colcon_meta']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'colcon_meta'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['ros']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ros'
+[1.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_moveit_config' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_moveit_config'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['ignore', 'ignore_ament_install']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ignore'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ignore_ament_install'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['colcon_pkg']
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'colcon_pkg'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['colcon_meta']
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'colcon_meta'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['ros']
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ros'
+[1.137s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_setup' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_setup'
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['ignore', 'ignore_ament_install']
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ignore'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ignore_ament_install'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['colcon_pkg']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'colcon_pkg'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['colcon_meta']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'colcon_meta'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['ros']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ros'
+[1.140s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_gun_description' with type 'ros.ament_cmake' and name 'alpaka_welding_gun_description'
+[1.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore'
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore_ament_install'
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_pkg']
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_pkg'
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_meta']
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_meta'
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ros']
+[1.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ros'
+[1.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bringup' with type 'ros.ament_cmake' and name 'bringup'
+[1.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['ignore', 'ignore_ament_install']
+[1.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ignore'
+[1.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ignore_ament_install'
+[1.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['colcon_pkg']
+[1.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'colcon_pkg'
+[1.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['colcon_meta']
+[1.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'colcon_meta'
+[1.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['ros']
+[1.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ros'
+[1.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ml_model' with type 'ros.ament_python' and name 'ml_model'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'bazel'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'meson'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[1.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[1.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'bazel'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'meson'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ignore'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ignore_ament_install'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['colcon_pkg']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'colcon_pkg'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ros'
+[1.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[1.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.216s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_chassis_description' in 'src/alpaka_chassis_description'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_test_tcp_description' in 'src/alpaka_test_tcp_description'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_welding_cobot_description' in 'src/alpaka_welding_cobot_description'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_welding_cobot_moveit' in 'src/alpaka_welding_cobot_moveit'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_welding_cobot_moveit_config' in 'src/alpaka_welding_cobot_moveit_config'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_welding_cobot_setup' in 'src/alpaka_welding_cobot_setup'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alpaka_welding_gun_description' in 'src/alpaka_welding_gun_description'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'bringup' in 'src/bringup'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realsense2_camera_msgs' in 'src/realsense-ros/realsense2_camera_msgs'
+[1.217s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realsense2_camera' in 'src/realsense-ros/realsense2_camera'
+[1.218s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realsense2_description' in 'src/realsense2_description'
+[1.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.227s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/alpaka-admin/my_alpaka_urdf_ws/install
+[1.231s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 472 installed packages in /opt/ros/humble
+[1.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'bazel_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'bazel_task' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_target' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_clean_cache' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_clean_first' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_force_configure' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'meson_args' from command line to '[]'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'ament_cmake_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'catkin_cmake_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.399s] DEBUG:colcon.colcon_core.verb:Building package 'ml_model' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model', 'symlink_install': False, 'test_result_base': None}
+[1.400s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.402s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model' with build type 'ament_python'
+[1.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('ml_model', 'ament_prefix_path')
+[1.407s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.ps1'
+[1.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.dsv'
+[1.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.sh'
+[1.411s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=84 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[1.411s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.411s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.411s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.042s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model'
+[2.043s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=84 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[2.043s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[2.043s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.043s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model': PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ml_model build --build-base /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build install --record /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log --single-version-externally-managed install_data
+[3.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model' returned '0': PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ml_model build --build-base /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build install --record /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log --single-version-externally-managed install_data
+[3.736s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model' for CMake module files
+[3.738s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model' for CMake config files
+[3.740s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib'
+[3.740s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/bin'
+[3.741s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/pkgconfig/ml_model.pc'
+[3.741s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages'
+[3.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('ml_model', 'pythonpath')
+[3.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.ps1'
+[3.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.dsv'
+[3.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.sh'
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/bin'
+[3.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ml_model)
+[3.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.ps1'
+[3.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.dsv'
+[3.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.sh'
+[3.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.bash'
+[3.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.zsh'
+[3.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/colcon-core/packages/ml_model)
+[3.757s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.758s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=84 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[3.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.759s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.759s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.768s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.769s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.800s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.801s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.ps1'
+[3.803s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alpaka-admin/my_alpaka_urdf_ws/install/_local_setup_util_ps1.py'
+[3.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.ps1'
+[3.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.sh'
+[3.811s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alpaka-admin/my_alpaka_urdf_ws/install/_local_setup_util_sh.py'
+[3.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.sh'
+[3.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.bash'
+[3.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.bash'
+[3.822s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.zsh'
+[3.823s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.zsh'
+[3.827s] INFO:colcon.colcon_core.shell:Creating '/home/alpaka-admin/my_alpaka_urdf_ws/install/spawn_shell.bash'

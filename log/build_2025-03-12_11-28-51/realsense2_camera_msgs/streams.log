@@ -1,0 +1,23 @@
+[0.087s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=100 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs -- -j8 -l8
+[0.222s] [ 11%] Built target realsense2_camera_msgs__rosidl_generator_c
+[0.223s] [ 12%] Built target realsense2_camera_msgs__cpp
+[0.295s] [ 12%] Built target ament_cmake_python_copy_realsense2_camera_msgs
+[0.320s] [ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[0.339s] [ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.340s] [ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[0.340s] [ 57%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.340s] [ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.340s] [ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[0.348s] [ 79%] Built target realsense2_camera_msgs
+[0.380s] [ 80%] Built target realsense2_camera_msgs__py
+[0.424s] [ 90%] Built target realsense2_camera_msgs__rosidl_generator_py
+[0.463s] [ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.465s] [ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[0.467s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[0.811s] running egg_info
+[0.812s] writing realsense2_camera_msgs.egg-info/PKG-INFO
+[0.812s] writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt
+[0.812s] writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt
+[0.816s] reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[0.817s] writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[0.862s] [100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg

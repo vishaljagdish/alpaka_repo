@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:25 (install):
+  install TARGETS given target "alpaka_welding_cobot_moveit" which does not
+  exist.
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

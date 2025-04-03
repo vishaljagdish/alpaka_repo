@@ -1,0 +1,31 @@
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs_msg[m[K’ has not been declared
+   57 |     [01;31m[Kgeometry_msgs_msg[m[K::Pose camera_to_world;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_to_world[m[K’ was not declared in this scope
+   66 |     [01;31m[Kcamera_to_world[m[K.position.x = transform_camera_world.translation.x;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:66:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktranslation[m[K’
+   66 |     camera_to_world.position.x = transform_camera_world.[01;31m[Ktranslation[m[K.x;
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:67:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktranslation[m[K’
+   67 |     camera_to_world.position.y = transform_camera_world.[01;31m[Ktranslation[m[K.y;
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:68:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktranslation[m[K’
+   68 |     camera_to_world.position.z = transform_camera_world.[01;31m[Ktranslation[m[K.z
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:74:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+   74 |     target_pose.position.x = msg->[01;31m[Kposition[m[K.x + camera_to_world.position.x;
+      |                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:75:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+   75 |     target_pose.position.y = msg->[01;31m[Kposition[m[K.y + camera_to_world_position.y;
+      |                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:75:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_to_world_position[m[K’ was not declared in this scope
+   75 |     target_pose.position.y = msg->position.y + [01;31m[Kcamera_to_world_position[m[K.y;
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:76:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+   76 |     target_pose.position.z = msg->[01;31m[Kposition[m[K.z + camera_to_world_position.z;
+      |                                   [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

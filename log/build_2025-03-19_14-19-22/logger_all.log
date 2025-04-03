@@ -1,0 +1,921 @@
+[0.611s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.611s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], bazel_args=None, bazel_task=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, meson_args=[], ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_alias.argument_parser.alias.AliasArgumentDecorator object at 0x7e8c01ad1a80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e8c01ad0be0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e8c01ad0be0>>, mixin_verb=('build',))
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.027s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.027s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alpaka-admin/my_alpaka_urdf_ws'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'bazel'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'meson'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'bazel'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'meson'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ignore_ament_install'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['colcon_pkg']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'colcon_pkg'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['colcon_meta']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'colcon_meta'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extensions ['ros']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_chassis_description) by extension 'ros'
+[1.042s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_chassis_description' with type 'ros.ament_cmake' and name 'alpaka_chassis_description'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['ignore', 'ignore_ament_install']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ignore'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ignore_ament_install'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['colcon_pkg']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'colcon_pkg'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['colcon_meta']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'colcon_meta'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extensions ['ros']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_test_tcp_description) by extension 'ros'
+[1.046s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_test_tcp_description' with type 'ros.ament_cmake' and name 'alpaka_test_tcp_description'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ignore'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ignore_ament_install'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['colcon_pkg']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'colcon_pkg'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['colcon_meta']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'colcon_meta'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extensions ['ros']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_description) by extension 'ros'
+[1.048s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_description' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_description'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ignore_ament_install'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['colcon_pkg']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'colcon_pkg'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['colcon_meta']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'colcon_meta'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extensions ['ros']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit) by extension 'ros'
+[1.053s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_moveit' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_moveit'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ignore'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ignore_ament_install'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['colcon_pkg']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'colcon_pkg'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['colcon_meta']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'colcon_meta'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extensions ['ros']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_moveit_config) by extension 'ros'
+[1.056s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_moveit_config' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_moveit_config'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['ignore', 'ignore_ament_install']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ignore'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ignore_ament_install'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['colcon_pkg']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'colcon_pkg'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['colcon_meta']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'colcon_meta'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extensions ['ros']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_cobot_setup) by extension 'ros'
+[1.058s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_cobot_setup' with type 'ros.ament_cmake' and name 'alpaka_welding_cobot_setup'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['ignore', 'ignore_ament_install']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ignore'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ignore_ament_install'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['colcon_pkg']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'colcon_pkg'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['colcon_meta']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'colcon_meta'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extensions ['ros']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/alpaka_welding_gun_description) by extension 'ros'
+[1.062s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alpaka_welding_gun_description' with type 'ros.ament_cmake' and name 'alpaka_welding_gun_description'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore_ament_install'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_pkg']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_pkg'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_meta']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_meta'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ros']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ros'
+[1.065s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bringup' with type 'ros.ament_cmake' and name 'bringup'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['ignore', 'ignore_ament_install']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ignore'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ignore_ament_install'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['colcon_pkg']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'colcon_pkg'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['colcon_meta']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'colcon_meta'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extensions ['ros']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/ml_model) by extension 'ros'
+[1.068s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ml_model' with type 'ros.ament_python' and name 'ml_model'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'bazel'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'meson'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[1.084s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[1.086s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['bazel', 'cmake', 'meson', 'python']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'bazel'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'meson'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ignore'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ignore_ament_install'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['colcon_pkg']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'colcon_pkg'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['colcon_meta']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'colcon_meta'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extensions ['ros']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense2_description) by extension 'ros'
+[1.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.131s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 473 installed packages in /opt/ros/humble
+[1.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'bazel_args' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'bazel_task' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_args' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_target' from command line to 'None'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.309s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'meson_args' from command line to '[]'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.310s] Level 5:colcon.colcon_core.verb:set package 'alpaka_chassis_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.310s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_chassis_description' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_chassis_description', 'symlink_install': False, 'test_result_base': None}
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'bazel_args' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'bazel_task' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_args' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_target' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'meson_args' from command line to '[]'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'alpaka_test_tcp_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.343s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_test_tcp_description' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_test_tcp_description', 'symlink_install': False, 'test_result_base': None}
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'bazel_args' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'bazel_task' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_args' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_target' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'meson_args' from command line to '[]'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.372s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_welding_cobot_description' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_description', 'symlink_install': False, 'test_result_base': None}
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'bazel_args' from command line to 'None'
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'bazel_task' from command line to 'None'
+[1.396s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_args' from command line to 'None'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_target' from command line to 'None'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'meson_args' from command line to '[]'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[1.397s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.397s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_welding_cobot_moveit' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit', 'symlink_install': False, 'test_result_base': None}
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'bazel_args' from command line to 'None'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'bazel_task' from command line to 'None'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.421s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.422s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'meson_args' from command line to '[]'
+[1.422s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.422s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.422s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.422s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_welding_cobot_moveit_config' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.450s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'bazel_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'bazel_task' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_target' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_clean_first' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'cmake_force_configure' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'meson_args' from command line to '[]'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'ament_cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_cobot_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.451s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_welding_cobot_setup' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_setup', 'symlink_install': False, 'test_result_base': None}
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'bazel_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'bazel_task' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_target' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'meson_args' from command line to '[]'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'alpaka_welding_gun_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.477s] DEBUG:colcon.colcon_core.verb:Building package 'alpaka_welding_gun_description' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_gun_description', 'symlink_install': False, 'test_result_base': None}
+[1.503s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'bazel_args' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'bazel_task' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_args' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'meson_args' from command line to '[]'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.504s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.504s] DEBUG:colcon.colcon_core.verb:Building package 'bringup' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/bringup', 'symlink_install': False, 'test_result_base': None}
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'bazel_args' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'bazel_task' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_args' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_target' from command line to 'None'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.528s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_clean_cache' from command line to 'False'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_clean_first' from command line to 'False'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'cmake_force_configure' from command line to 'False'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'meson_args' from command line to '[]'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'ament_cmake_args' from command line to 'None'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'catkin_cmake_args' from command line to 'None'
+[1.529s] Level 5:colcon.colcon_core.verb:set package 'ml_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.529s] DEBUG:colcon.colcon_core.verb:Building package 'ml_model' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model', 'symlink_install': False, 'test_result_base': None}
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'bazel_args' from command line to 'None'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'bazel_task' from command line to 'None'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'meson_args' from command line to '[]'
+[1.595s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.596s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.596s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.596s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'bazel_args' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'bazel_task' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[1.629s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[1.629s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'meson_args' from command line to '[]'
+[1.629s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[1.629s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[1.629s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.629s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera', 'symlink_install': False, 'test_result_base': None}
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'bazel_args' from command line to 'None'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'bazel_task' from command line to 'None'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'meson_args' from command line to '[]'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.660s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.661s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'bazel_args': None, 'bazel_task': None, 'build_base': '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description', 'merge_install': False, 'meson_args': [], 'path': '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[1.661s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.664s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.664s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[1.665s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera_msgs'
+[1.670s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.671s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=228 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs'
+[1.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.682s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_chassis_description' with build type 'ament_cmake'
+[1.683s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_chassis_description'
+[1.685s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=44 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description'
+[1.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.692s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_test_tcp_description' with build type 'ament_cmake'
+[1.692s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_test_tcp_description'
+[1.693s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=2 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description'
+[1.693s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.693s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.693s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.699s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_description' with build type 'ament_cmake'
+[1.699s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_description'
+[1.700s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=16 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description'
+[1.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.701s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.707s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit' with build type 'ament_cmake'
+[1.707s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit'
+[1.708s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=93 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit'
+[1.708s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.708s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.708s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.716s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit_config' with build type 'ament_cmake'
+[1.716s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit_config'
+[1.717s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=17 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config'
+[1.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.723s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_setup' with build type 'ament_cmake'
+[1.723s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_setup'
+[1.724s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=68 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup'
+[1.724s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.724s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.724s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.730s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_gun_description' with build type 'ament_cmake'
+[1.730s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_gun_description'
+[1.731s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=90 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description'
+[1.731s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[1.731s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.731s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=228 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs -- -j8 -l8
+[1.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=44 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description -- -j8 -l8
+[1.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=2 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description -- -j8 -l8
+[1.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=16 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description -- -j8 -l8
+[1.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=93 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[1.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=17 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config -- -j8 -l8
+[1.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=68 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup -- -j8 -l8
+[1.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description -- -j8 -l8
+[1.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=2 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description -- -j8 -l8
+[1.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=2 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description
+[1.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=68 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup -- -j8 -l8
+[1.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=68 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup
+[1.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=44 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description -- -j8 -l8
+[1.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=44 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description
+[1.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=17 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config -- -j8 -l8
+[1.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=17 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config
+[1.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_test_tcp_description)
+[1.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=16 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description -- -j8 -l8
+[2.011s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description' for CMake module files
+[2.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=16 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description' for CMake config files
+[2.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_test_tcp_description', 'cmake_prefix_path')
+[2.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.dsv'
+[2.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.sh'
+[2.038s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/bin'
+[2.039s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/lib/pkgconfig/alpaka_test_tcp_description.pc'
+[2.039s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/lib/python3.10/site-packages'
+[2.040s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/bin'
+[2.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.ps1'
+[2.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.dsv'
+[2.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.sh'
+[2.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.bash'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.zsh'
+[2.058s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/colcon-core/packages/alpaka_test_tcp_description)
+[2.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=2 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description
+[2.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_test_tcp_description)
+[2.064s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description' for CMake module files
+[2.065s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description' for CMake config files
+[2.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_test_tcp_description', 'cmake_prefix_path')
+[2.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.ps1'
+[2.068s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.dsv'
+[2.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/hook/cmake_prefix_path.sh'
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/bin'
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/lib/pkgconfig/alpaka_test_tcp_description.pc'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/lib/python3.10/site-packages'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/bin'
+[2.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.ps1'
+[2.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.dsv'
+[2.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.sh'
+[2.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.bash'
+[2.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.zsh'
+[2.084s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/colcon-core/packages/alpaka_test_tcp_description)
+[2.084s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=2 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description'
+[2.086s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/bringup' with build type 'ament_cmake'
+[2.086s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/bringup'
+[2.087s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=78 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup'
+[2.087s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[2.087s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_chassis_description)
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description' for CMake module files
+[2.108s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description' for CMake config files
+[2.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=44 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description
+[2.110s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_chassis_description', 'cmake_prefix_path')
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.ps1'
+[2.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.dsv'
+[2.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.sh'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/bin'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/lib/pkgconfig/alpaka_chassis_description.pc'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/lib/python3.10/site-packages'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/bin'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.ps1'
+[2.119s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.dsv'
+[2.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.sh'
+[2.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.bash'
+[2.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.zsh'
+[2.123s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/colcon-core/packages/alpaka_chassis_description)
+[2.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_chassis_description)
+[2.125s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description' for CMake module files
+[2.127s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description' for CMake config files
+[2.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_chassis_description', 'cmake_prefix_path')
+[2.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.ps1'
+[2.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.dsv'
+[2.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/hook/cmake_prefix_path.sh'
+[2.132s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/bin'
+[2.132s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/lib/pkgconfig/alpaka_chassis_description.pc'
+[2.133s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/lib/python3.10/site-packages'
+[2.134s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/bin'
+[2.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.ps1'
+[2.136s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.dsv'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.sh'
+[2.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.bash'
+[2.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/package.zsh'
+[2.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/colcon-core/packages/alpaka_chassis_description)
+[2.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_setup)
+[2.142s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=44 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_chassis_description'
+[2.143s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup' for CMake module files
+[2.144s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup' for CMake config files
+[2.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=68 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup
+[2.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_setup', 'cmake_prefix_path')
+[2.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.sh'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/bin'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/lib/pkgconfig/alpaka_welding_cobot_setup.pc'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/lib/python3.10/site-packages'
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/bin'
+[2.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.ps1'
+[2.157s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.dsv'
+[2.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.sh'
+[2.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.bash'
+[2.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.zsh'
+[2.161s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/colcon-core/packages/alpaka_welding_cobot_setup)
+[2.163s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_setup)
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup' for CMake module files
+[2.166s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup' for CMake config files
+[2.167s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_setup', 'cmake_prefix_path')
+[2.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.ps1'
+[2.169s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.dsv'
+[2.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/hook/cmake_prefix_path.sh'
+[2.173s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/bin'
+[2.173s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/lib/pkgconfig/alpaka_welding_cobot_setup.pc'
+[2.174s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/lib/python3.10/site-packages'
+[2.174s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/bin'
+[2.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.ps1'
+[2.177s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.dsv'
+[2.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.sh'
+[2.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.bash'
+[2.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.zsh'
+[2.183s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/colcon-core/packages/alpaka_welding_cobot_setup)
+[2.184s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=68 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup'
+[2.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_moveit_config)
+[2.188s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config' for CMake module files
+[2.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=90 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description -- -j8 -l8
+[2.190s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config' for CMake config files
+[2.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=90 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description
+[2.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=17 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config
+[2.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_moveit_config', 'cmake_prefix_path')
+[2.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.ps1'
+[2.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.dsv'
+[2.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.sh'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/bin'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/lib/pkgconfig/alpaka_welding_cobot_moveit_config.pc'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/lib/python3.10/site-packages'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/bin'
+[2.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.ps1'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.dsv'
+[2.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.sh'
+[2.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.bash'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.zsh'
+[2.207s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/colcon-core/packages/alpaka_welding_cobot_moveit_config)
+[2.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_moveit_config)
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config' for CMake module files
+[2.211s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config' for CMake config files
+[2.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_moveit_config', 'cmake_prefix_path')
+[2.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.ps1'
+[2.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.dsv'
+[2.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/hook/cmake_prefix_path.sh'
+[2.217s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/bin'
+[2.217s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/lib/pkgconfig/alpaka_welding_cobot_moveit_config.pc'
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/lib/python3.10/site-packages'
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/bin'
+[2.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.ps1'
+[2.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.dsv'
+[2.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.sh'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.bash'
+[2.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.zsh'
+[2.227s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/colcon-core/packages/alpaka_welding_cobot_moveit_config)
+[2.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_description)
+[2.229s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description' for CMake module files
+[2.229s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=17 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description' for CMake config files
+[2.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=16 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description
+[2.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_description', 'cmake_prefix_path')
+[2.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.ps1'
+[2.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.dsv'
+[2.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.sh'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/bin'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/lib/pkgconfig/alpaka_welding_cobot_description.pc'
+[2.239s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/lib/python3.10/site-packages'
+[2.240s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/bin'
+[2.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.ps1'
+[2.243s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.dsv'
+[2.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.sh'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.bash'
+[2.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.zsh'
+[2.247s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/colcon-core/packages/alpaka_welding_cobot_description)
+[2.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_description)
+[2.250s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description' for CMake module files
+[2.251s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description' for CMake config files
+[2.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_description', 'cmake_prefix_path')
+[2.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.ps1'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.dsv'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/hook/cmake_prefix_path.sh'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/bin'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/lib/pkgconfig/alpaka_welding_cobot_description.pc'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/lib/python3.10/site-packages'
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/bin'
+[2.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.dsv'
+[2.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.sh'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.bash'
+[2.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/alpaka_welding_cobot_description/package.zsh'
+[2.268s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_description/share/colcon-core/packages/alpaka_welding_cobot_description)
+[2.270s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model' with build type 'ament_python'
+[2.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('ml_model', 'ament_prefix_path')
+[2.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.ps1'
+[2.272s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=16 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_description'
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.dsv'
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/ament_prefix_path.sh'
+[2.278s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=45 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[2.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[2.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=78 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup -- -j8 -l8
+[2.310s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_gun_description)
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description' for CMake module files
+[2.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=90 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description
+[2.315s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description' for CMake config files
+[2.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_gun_description', 'cmake_prefix_path')
+[2.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.ps1'
+[2.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.dsv'
+[2.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.sh'
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/bin'
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/lib/pkgconfig/alpaka_welding_gun_description.pc'
+[2.324s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/lib/python3.10/site-packages'
+[2.325s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/bin'
+[2.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.ps1'
+[2.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.dsv'
+[2.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.sh'
+[2.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.bash'
+[2.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.zsh'
+[2.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/colcon-core/packages/alpaka_welding_gun_description)
+[2.336s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_gun_description)
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description' for CMake module files
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description' for CMake config files
+[2.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_gun_description', 'cmake_prefix_path')
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.ps1'
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.dsv'
+[2.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/hook/cmake_prefix_path.sh'
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/bin'
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/lib/pkgconfig/alpaka_welding_gun_description.pc'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/lib/python3.10/site-packages'
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/bin'
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.ps1'
+[2.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.dsv'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.sh'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.bash'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/alpaka_welding_gun_description/package.zsh'
+[2.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_gun_description/share/colcon-core/packages/alpaka_welding_gun_description)
+[2.359s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=90 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_gun_description'
+[3.159s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model'
+[3.160s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=45 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[3.161s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[3.161s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=78 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup -- -j8 -l8
+[3.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=78 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup
+[3.203s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[3.204s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup' for CMake module files
+[3.206s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup' for CMake config files
+[3.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=78 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/bringup
+[3.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[3.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[3.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[3.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[3.215s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/bin'
+[3.215s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/lib/pkgconfig/bringup.pc'
+[3.216s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/lib/python3.10/site-packages'
+[3.217s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/bin'
+[3.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.ps1'
+[3.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.dsv'
+[3.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.sh'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.bash'
+[3.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.zsh'
+[3.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/colcon-core/packages/bringup)
+[3.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[3.226s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup' for CMake module files
+[3.228s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup' for CMake config files
+[3.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[3.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[3.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[3.234s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/bin'
+[3.235s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/lib/pkgconfig/bringup.pc'
+[3.236s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/lib/python3.10/site-packages'
+[3.236s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/bin'
+[3.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.ps1'
+[3.239s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.dsv'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.sh'
+[3.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.bash'
+[3.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/package.zsh'
+[3.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/colcon-core/packages/bringup)
+[3.246s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=78 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup'
+[3.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=228 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs -- -j8 -l8
+[3.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=228 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs
+[3.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[3.668s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs' for CMake module files
+[3.670s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs' for CMake config files
+[3.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=228 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs
+[3.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[3.679s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib'
+[3.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[3.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/bin'
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[3.688s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[3.689s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/bin'
+[3.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[3.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[3.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[3.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[3.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[3.697s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[3.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs' for CMake module files
+[3.701s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs' for CMake config files
+[3.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib'
+[3.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[3.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/bin'
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/bin'
+[3.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[3.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[3.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[3.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[3.720s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[3.720s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense-ros/realsense2_camera'
+[3.721s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=58 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera'
+[3.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[3.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.721s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=228 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera_msgs'
+[3.730s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense2_description' with build type 'ament_cmake'
+[3.731s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alpaka-admin/my_alpaka_urdf_ws/src/realsense2_description'
+[3.732s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Allocated ROS_DOMAIN_ID=18 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description'
+[3.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'ros_domain_id' for command environment: 
+[3.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.732s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=58 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera -- -j8 -l8
+[3.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description -- -j8 -l8
+[3.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description -- -j8 -l8
+[3.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description
+[3.907s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.908s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description' for CMake module files
+[3.917s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description' for CMake config files
+[3.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description
+[3.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.928s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/bin'
+[3.928s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.929s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/lib/python3.10/site-packages'
+[3.930s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/bin'
+[3.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[3.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[3.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.941s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description' for CMake module files
+[3.943s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description' for CMake config files
+[3.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.950s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/bin'
+[3.951s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.951s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/lib/python3.10/site-packages'
+[3.952s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/bin'
+[3.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.957s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[3.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[3.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.964s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.965s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=18 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_description'
+[4.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=58 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera -- -j8 -l8
+[4.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=58 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera
+[4.218s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[4.219s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera' for CMake module files
+[4.227s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera' for CMake config files
+[4.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_DOMAIN_ID=58 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera
+[4.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[4.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[4.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[4.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[4.233s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib'
+[4.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[4.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[4.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[4.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[4.236s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/bin'
+[4.236s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[4.237s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/python3.10/site-packages'
+[4.237s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/bin'
+[4.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[4.239s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[4.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[4.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[4.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[4.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[4.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[4.245s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera' for CMake module files
+[4.246s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera' for CMake config files
+[4.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[4.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[4.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[4.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib'
+[4.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[4.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[4.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[4.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/bin'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/lib/python3.10/site-packages'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/bin'
+[4.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[4.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[4.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[4.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[4.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[4.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[4.270s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=58 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/realsense2_camera'
+[4.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model': PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=45 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ml_model build --build-base /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build install --record /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log --single-version-externally-managed install_data
+[5.243s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model' for CMake module files
+[5.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/src/ml_model' returned '0': PYTHONPATH=/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} ROS_DOMAIN_ID=45 /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ml_model build --build-base /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/build install --record /home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model/install.log --single-version-externally-managed install_data
+[5.245s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model' for CMake config files
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib'
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/bin'
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/pkgconfig/ml_model.pc'
+[5.247s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/lib/python3.10/site-packages'
+[5.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('ml_model', 'pythonpath')
+[5.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.ps1'
+[5.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.dsv'
+[5.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/hook/pythonpath.sh'
+[5.251s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/bin'
+[5.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ml_model)
+[5.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.ps1'
+[5.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.dsv'
+[5.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.sh'
+[5.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.bash'
+[5.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/ml_model/package.zsh'
+[5.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model/share/colcon-core/packages/ml_model)
+[5.257s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=45 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/ml_model'
+[23.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=93 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[23.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alpaka_welding_cobot_moveit)
+[23.526s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit' for CMake module files
+[23.527s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit' for CMake config files
+[23.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('alpaka_welding_cobot_moveit', 'cmake_prefix_path')
+[23.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/hook/cmake_prefix_path.ps1'
+[23.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/hook/cmake_prefix_path.dsv'
+[23.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/hook/cmake_prefix_path.sh'
+[23.531s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib'
+[23.531s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/bin'
+[23.531s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/pkgconfig/alpaka_welding_cobot_moveit.pc'
+[23.532s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/lib/python3.10/site-packages'
+[23.532s] Level 1:colcon.colcon_core.environment:checking '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/bin'
+[23.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.ps1'
+[23.534s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.dsv'
+[23.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.sh'
+[23.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.bash'
+[23.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/alpaka_welding_cobot_moveit/package.zsh'
+[23.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit/share/colcon-core/packages/alpaka_welding_cobot_moveit)
+[23.537s] DEBUG:colcon.colcon_ros_domain_id_coordinator.shell.ros_domain_id:Released ROS_DOMAIN_ID=93 for '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit'
+[23.548s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.548s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.548s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[23.548s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.559s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.597s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.ps1'
+[23.601s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alpaka-admin/my_alpaka_urdf_ws/install/_local_setup_util_ps1.py'
+[23.604s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.ps1'
+[23.606s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.sh'
+[23.608s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alpaka-admin/my_alpaka_urdf_ws/install/_local_setup_util_sh.py'
+[23.610s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.sh'
+[23.613s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.bash'
+[23.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.bash'
+[23.617s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alpaka-admin/my_alpaka_urdf_ws/install/local_setup.zsh'
+[23.618s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alpaka-admin/my_alpaka_urdf_ws/install/setup.zsh'
+[23.620s] INFO:colcon.colcon_core.shell:Creating '/home/alpaka-admin/my_alpaka_urdf_ws/install/spawn_shell.bash'

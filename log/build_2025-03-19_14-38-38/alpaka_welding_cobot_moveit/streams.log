@@ -1,0 +1,51 @@
+[0.055s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=51 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.205s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.250s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[8.663s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.664s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.664s]                  from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:5[m[K,
+[8.664s]                  from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:1[m[K:
+[8.664s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In member function ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.665s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:61:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.665s]    61 |     RCLCPP_INFO(LOGGER, "O_x: %f", transform_tcp_tool0.[01;31m[Krotation[m[K.x);
+[8.665s]       |                                                        [01;31m[K^~~~~~~~[m[K
+[8.665s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:62:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotationn[m[K’
+[8.665s]    62 |     RCLCPP_INFO(LOGGER, "O_y: %f", transform_tcp_tool0.[01;31m[Krotationn[m[K.y);
+[8.665s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[8.665s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:63:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.665s]    63 |     RCLCPP_INFO(LOGGER, "O_z: %f", transform_tcp_tool0.[01;31m[Krotation[m[K.z);
+[8.665s]       |                                                        [01;31m[K^~~~~~~~[m[K
+[8.666s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:64:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.666s]    64 |     RCLCPP_INFO(LOGGER, "O_w: %f", transform_tcp_tool0.[01;31m[Krotation[m[K.w);
+[8.666s]       |                                                        [01;31m[K^~~~~~~~[m[K
+[8.668s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:79:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.668s]    79 |     RCLCPP_INFO(LOGGER, "O_x: %f", transform_camera_world.[01;31m[Krotation[m[K.x);
+[8.669s]       |                                                           [01;31m[K^~~~~~~~[m[K
+[8.669s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:80:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotationn[m[K’
+[8.669s]    80 |     RCLCPP_INFO(LOGGER, "O_y: %f", transform_camera_world.[01;31m[Krotationn[m[K.y);
+[8.669s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[8.669s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:81:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.669s]    81 |     RCLCPP_INFO(LOGGER, "O_z: %f", transform_camera_world.[01;31m[Krotation[m[K.z);
+[8.669s]       |                                                           [01;31m[K^~~~~~~~[m[K
+[8.670s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:82:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TransformStamped = struct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krotation[m[K’
+[8.670s]    82 |     RCLCPP_INFO(LOGGER, "O_w: %f", transform_camera_world.[01;31m[Krotation[m[K.w);
+[8.670s]       |                                                           [01;31m[K^~~~~~~~[m[K
+[8.671s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:109:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Quaternion = struct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[8.671s]   109 |     RCLCPP_INFO(LOGGER, "P_y: %f", pointOffset.[01;31m[Kposition[m[K.y);
+[8.671s]       |                                                [01;31m[K^~~~~~~~[m[K
+[8.672s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:110:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Quaternion = struct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[8.672s]   110 |     RCLCPP_INFO(LOGGER, "P_z: %f", pointOffset.[01;31m[Kposition[m[K.z);
+[8.672s]       |                                                [01;31m[K^~~~~~~~[m[K
+[15.327s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[15.327s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[15.327s] gmake: *** [Makefile:146: all] Error 2
+[15.330s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=51 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

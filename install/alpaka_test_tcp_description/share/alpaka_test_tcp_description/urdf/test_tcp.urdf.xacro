@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<robot name="$(arg name)" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- import macros -->
+    <xacro:include filename="$(find alpaka_test_tcp_description)/urdf/test_tcp_macro.xacro"/>
+ 
+    <!-- robot name parameter -->
+    <xacro:property name="name" value="test_tcp" />
+
+    <xacro:arg name="prefix" default="" />
+
+    <!-- create base link -->
+    <link name="base_link"/>
+    <xacro:test_tcp prefix="$(arg prefix)" parent="base_link" />
+
+</robot>

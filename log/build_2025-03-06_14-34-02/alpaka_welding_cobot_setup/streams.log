@@ -1,0 +1,108 @@
+[0.065s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake /home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_setup -DCMAKE_INSTALL_PREFIX=/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup
+[0.229s] -- The C compiler identification is GNU 11.4.0
+[0.410s] -- The CXX compiler identification is GNU 11.4.0
+[0.439s] -- Detecting C compiler ABI info
+[0.624s] -- Detecting C compiler ABI info - done
+[0.652s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.653s] -- Detecting C compile features
+[0.654s] -- Detecting C compile features - done
+[0.661s] -- Detecting CXX compiler ABI info
+[0.879s] -- Detecting CXX compiler ABI info - done
+[0.903s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.904s] -- Detecting CXX compile features
+[0.906s] -- Detecting CXX compile features - done
+[0.916s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.486s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.262s] -- Configuring done
+[2.274s] -- Generating done
+[2.287s] -- Build files have been written to: /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup
+[2.366s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake /home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_setup -DCMAKE_INSTALL_PREFIX=/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup
+[2.369s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup -- -j8 -l8
+[2.510s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup -- -j8 -l8
+[2.512s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup
+[2.540s] -- Install configuration: ""
+[2.541s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/launch
+[2.541s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/launch/ur_control.launch.py
+[2.541s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config
+[2.541s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur_controllers.yaml
+[2.542s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e
+[2.546s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e/physical_parameters.yaml
+[2.546s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e/joint_limits.yaml
+[2.546s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e/visual_parameters.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e/default_kinematics.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3_update_rate.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30_update_rate.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e_update_rate.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10_update_rate.yaml
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3
+[2.547s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3/physical_parameters.yaml
+[2.548s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3/joint_limits.yaml
+[2.548s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3/visual_parameters.yaml
+[2.548s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3/default_kinematics.yaml
+[2.548s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20_update_rate.yaml
+[2.548s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e_update_rate.yaml
+[2.549s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30
+[2.551s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30/physical_parameters.yaml
+[2.551s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30/joint_limits.yaml
+[2.552s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30/visual_parameters.yaml
+[2.552s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur30/default_kinematics.yaml
+[2.552s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e
+[2.553s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e/physical_parameters.yaml
+[2.553s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e/joint_limits.yaml
+[2.553s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e/visual_parameters.yaml
+[2.553s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e/default_kinematics.yaml
+[2.554s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e
+[2.554s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e/physical_parameters.yaml
+[2.554s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e/joint_limits.yaml
+[2.555s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e/visual_parameters.yaml
+[2.555s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10e/default_kinematics.yaml
+[2.555s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur16e_update_rate.yaml
+[2.555s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/test_velocity_goal_publishers_config.yaml
+[2.556s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/initial_positions.yaml
+[2.557s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5_update_rate.yaml
+[2.557s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e
+[2.558s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e/physical_parameters.yaml
+[2.558s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e/joint_limits.yaml
+[2.559s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e/visual_parameters.yaml
+[2.559s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5e/default_kinematics.yaml
+[2.559s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20
+[2.560s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20/physical_parameters.yaml
+[2.560s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20/joint_limits.yaml
+[2.561s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20/visual_parameters.yaml
+[2.561s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur20/default_kinematics.yaml
+[2.563s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5
+[2.563s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5/physical_parameters.yaml
+[2.564s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5/joint_limits.yaml
+[2.564s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5/visual_parameters.yaml
+[2.564s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur5/default_kinematics.yaml
+[2.565s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur3e_update_rate.yaml
+[2.565s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/test_goal_publishers_config.yaml
+[2.566s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10
+[2.566s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10/physical_parameters.yaml
+[2.566s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10/joint_limits.yaml
+[2.566s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10/visual_parameters.yaml
+[2.566s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/config/ur10/default_kinematics.yaml
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources/rtde_input_recipe.txt
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources/externalcontrol-1.0.5.urcap
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources/ros_control.urscript
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources/rtde_output_recipe.txt
+[2.567s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/resources/rs485-1.0.urcap
+[2.569s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/rviz
+[2.570s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/rviz/view_robot.rviz
+[2.570s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_cobot_setup
+[2.570s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_cobot_setup
+[2.570s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/environment/ament_prefix_path.sh
+[2.571s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/environment/ament_prefix_path.dsv
+[2.571s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/environment/path.sh
+[2.571s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/environment/path.dsv
+[2.572s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/local_setup.bash
+[2.572s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/local_setup.sh
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/local_setup.zsh
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/local_setup.dsv
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.dsv
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/ament_index/resource_index/packages/alpaka_welding_cobot_setup
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/cmake/alpaka_welding_cobot_setupConfig.cmake
+[2.573s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/cmake/alpaka_welding_cobot_setupConfig-version.cmake
+[2.574s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_setup/share/alpaka_welding_cobot_setup/package.xml
+[2.651s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble ROS_DOMAIN_ID=3 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_setup

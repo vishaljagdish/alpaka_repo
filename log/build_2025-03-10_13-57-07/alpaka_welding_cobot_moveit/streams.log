@@ -1,0 +1,24 @@
+[0.074s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=229 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target alpaka_welding_cobot_moveit[0m
+[0.291s] [ 33%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node.cpp.o[0m
+[0.300s] [ 66%] [32mBuilding CXX object CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o[0m
+[9.243s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K In constructor ‘[01m[KMlReceiverMoveitNode::MlReceiverMoveitNode(rclcpp::NodeOptions)[m[K’:
+[9.243s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:18:126:[m[K [01;31m[Kerror: [m[K‘[01m[KOnPointReceiveCallback[m[K’ is not a member of ‘[01m[KMlReceiverMoveitNode[m[K’
+[9.243s]    18 |     point_subscription_= this->create_subscription<geometry_msgs::msg::Point>("/points", 1, std::bind(&MlReceiverMoveitNode::[01;31m[KOnPointReceiveCallback[m[K, this, _1));
+[9.243s]       |                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.248s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:[m[K At global scope:
+[9.248s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:38:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr) const[m[K’
+[9.249s]    38 | void [01;31m[KMlReceiverMoveitNode[m[K::onPointReceiveCallback(const geometry_msgs::msg::Point::SharedPtr msg) const{
+[9.249s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.249s] In file included from [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/src/ml_receiver_node_driver.cpp:1[m[K:
+[9.249s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:27:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid MlReceiverMoveitNode::onPointReceiveCallback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’
+[9.249s]    27 |     void [01;36m[KonPointReceiveCallback[m[K(const geometry_msgs::msg::Point::SharedPtr msg);
+[9.249s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.249s] [01m[K/home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit/include/ml_node_receiver_driver.hpp:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MlReceiverMoveitNode[m[K’ defined here
+[9.249s]    21 | class [01;36m[KMlReceiverMoveitNode[m[K : public rclcpp::Node
+[9.250s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[13.573s] gmake[2]: *** [CMakeFiles/alpaka_welding_cobot_moveit.dir/build.make:90: CMakeFiles/alpaka_welding_cobot_moveit.dir/src/ml_receiver_node_driver.cpp.o] Error 1
+[13.573s] gmake[2]: *** Waiting for unfinished jobs....
+[13.696s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/alpaka_welding_cobot_moveit.dir/all] Error 2
+[13.696s] gmake: *** [Makefile:146: all] Error 2
+[13.702s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/my_alpaka_urdf_ws/install/ml_model:/opt/ros/humble ROS_DOMAIN_ID=229 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit -- -j8 -l8

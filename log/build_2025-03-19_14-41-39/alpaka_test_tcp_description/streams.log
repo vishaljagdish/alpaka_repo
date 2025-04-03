@@ -1,0 +1,33 @@
+[0.061s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=64 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description -- -j8 -l8
+[0.178s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=64 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description -- -j8 -l8
+[0.182s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=64 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description
+[0.217s] -- Install configuration: ""
+[0.217s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/meshes
+[0.217s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/meshes/visual
+[0.217s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/meshes/visual/test_tcp_link_visual.STL
+[0.218s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/meshes/collision
+[0.218s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/meshes/collision/test_tcp_link_collision.STL
+[0.222s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/urdf
+[0.226s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/urdf/test_tcp.urdf.xacro
+[0.226s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/urdf/test_tcp.urdf
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/urdf/test_tcp_macro.xacro
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/launch
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/launch/view_test_tcp.launch.py
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/rviz
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/rviz/view_test_tcp.rviz
+[0.227s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/ament_index/resource_index/package_run_dependencies/alpaka_test_tcp_description
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/ament_index/resource_index/parent_prefix_path/alpaka_test_tcp_description
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/environment/ament_prefix_path.sh
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/environment/ament_prefix_path.dsv
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/environment/path.sh
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/environment/path.dsv
+[0.228s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/local_setup.bash
+[0.229s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/local_setup.sh
+[0.229s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/local_setup.zsh
+[0.229s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/local_setup.dsv
+[0.239s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.dsv
+[0.239s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/ament_index/resource_index/packages/alpaka_test_tcp_description
+[0.240s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/cmake/alpaka_test_tcp_descriptionConfig.cmake
+[0.241s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/cmake/alpaka_test_tcp_descriptionConfig-version.cmake
+[0.241s] -- Up-to-date: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_test_tcp_description/share/alpaka_test_tcp_description/package.xml
+[0.325s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble ROS_DOMAIN_ID=64 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_test_tcp_description

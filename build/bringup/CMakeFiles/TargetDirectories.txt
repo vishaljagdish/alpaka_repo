@@ -1,0 +1,9 @@
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/uninstall.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/bringup_uninstall.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/test.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/edit_cache.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/rebuild_cache.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/list_install_components.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/install.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/install/local.dir
+/home/alpaka-admin/my_alpaka_urdf_ws/build/bringup/CMakeFiles/install/strip.dir
