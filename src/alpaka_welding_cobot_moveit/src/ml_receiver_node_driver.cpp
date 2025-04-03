@@ -54,6 +54,19 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
         return;
     }
 
+    geometry_msgs::msg::PoseStamped current_pose;
+    current_pose = move_group_interface.getCurrentPose().pose;
+
+    // Print the current pose of the end effector
+    RCLCPP_INFO(node->get_logger(), "Current pose: X:%f Y:%f Z:%f x:%f y:%f z:%f w:%f",
+        current_pose.position.x,
+        current_pose.position.y,
+        current_pose.position.z,
+        current_pose.orientation.x,
+        current_pose.orientation.y,
+        current_pose.orientation.z,
+        current_pose.orientation.w);
+
     RCLCPP_INFO(LOGGER, "TF Tcp Tool0");
     RCLCPP_INFO(LOGGER, "P_x: %f", transform_tcp_tool0.transform.translation.x);
     RCLCPP_INFO(LOGGER, "P_y: %f", transform_tcp_tool0.transform.translation.y);
@@ -63,9 +76,9 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     RCLCPP_INFO(LOGGER, "O_z: %f", transform_tcp_tool0.transform.rotation.z);
     RCLCPP_INFO(LOGGER, "O_w: %f", transform_tcp_tool0.transform.rotation.w);
 
-    geometry_msgs::msg::TransformStamped transform_camera_world;
+    geometry_msgs::msg::TransformStamped transform_camera_base;
     try {
-        transform_camera_world = tf_buffer_.lookupTransform("base","sensor_d435i_color_optical_frame", tf2::TimePointZero,tf2::Duration(std::chrono::seconds(50)));
+        transform_camera_base = tf_buffer_.lookupTransform("base","sensor_d435i_color_optical_frame", tf2::TimePointZero,tf2::Duration(std::chrono::seconds(50)));
     } catch (const tf2::TransformException & ex){
         RCLCPP_WARN(get_logger(),"Could not find transform sensor_d435i_color_optical_frame-world.");
         RCLCPP_WARN(get_logger(),"%s",ex.what());
@@ -73,13 +86,13 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     }
 
     RCLCPP_INFO(LOGGER, "TF Base Kamera");
-    RCLCPP_INFO(LOGGER, "P_x: %f", transform_camera_world.transform.translation.x);
-    RCLCPP_INFO(LOGGER, "P_y: %f", transform_camera_world.transform.translation.y);
-    RCLCPP_INFO(LOGGER, "P_z: %f", transform_camera_world.transform.translation.z);
-    RCLCPP_INFO(LOGGER, "O_x: %f", transform_camera_world.transform.rotation.x);
-    RCLCPP_INFO(LOGGER, "O_y: %f", transform_camera_world.transform.rotation.y);
-    RCLCPP_INFO(LOGGER, "O_z: %f", transform_camera_world.transform.rotation.z);
-    RCLCPP_INFO(LOGGER, "O_w: %f", transform_camera_world.transform.rotation.w);
+    RCLCPP_INFO(LOGGER, "P_x: %f", transform_camera_base.transform.translation.x);
+    RCLCPP_INFO(LOGGER, "P_y: %f", transform_camera_base.transform.translation.y);
+    RCLCPP_INFO(LOGGER, "P_z: %f", transform_camera_base.transform.translation.z);
+    RCLCPP_INFO(LOGGER, "O_x: %f", transform_camera_base.transform.rotation.x);
+    RCLCPP_INFO(LOGGER, "O_y: %f", transform_camera_base.transform.rotation.y);
+    RCLCPP_INFO(LOGGER, "O_z: %f", transform_camera_base.transform.rotation.z);
+    RCLCPP_INFO(LOGGER, "O_w: %f", transform_camera_base.transform.rotation.w);
     
 
     geometry_msgs::msg::Quaternion cameraTargetPoint;
@@ -90,7 +103,7 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     cameraTargetPoint.y = msg->y;
     cameraTargetPoint.z = msg->z;
 
-    nomBaseCameraRot = normalizQuaternion(transform_camera_world.transform.rotation);
+    nomBaseCameraRot = normalizQuaternion(transform_camera_base.transform.rotation);
 
     cameraTargetPoint = this->multiplyQuaternion(nomBaseCameraRot, cameraTargetPoint);
     cameraTargetPoint = this->multiplyQuaternion(cameraTargetPoint, this->inversQuaternion(nomBaseCameraRot));
@@ -126,9 +139,9 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     RCLCPP_INFO(LOGGER, "P_y: %f", pointOffset.y);
     RCLCPP_INFO(LOGGER, "P_z: %f", pointOffset.z);
 
-    target_pose.position.x = cameraTargetPoint.x + transform_camera_world.transform.translation.x;
-    target_pose.position.y = cameraTargetPoint.y + transform_camera_world.transform.translation.y;
-    target_pose.position.z = cameraTargetPoint.z + transform_camera_world.transform.translation.z;
+    target_pose.position.x = cameraTargetPoint.x + transform_camera_base.transform.translation.x;
+    target_pose.position.y = cameraTargetPoint.y + transform_camera_base.transform.translation.y;
+    target_pose.position.z = cameraTargetPoint.z + transform_camera_base.transform.translation.z;
 
     RCLCPP_INFO(LOGGER, "Target in Base");
     RCLCPP_INFO(LOGGER, "P_x: %f", target_pose.position.x);
@@ -139,9 +152,9 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     RCLCPP_INFO(LOGGER, "O_z: %f", target_pose.orientation.z);
     RCLCPP_INFO(LOGGER, "O_w: %f", target_pose.orientation.w);
 
-    target_pose.position.x = cameraTargetPoint.x + pointOffset.x + transform_camera_world.transform.translation.x;
-    target_pose.position.y = cameraTargetPoint.y + pointOffset.y + transform_camera_world.transform.translation.y;
-    target_pose.position.z = cameraTargetPoint.z + pointOffset.z + transform_camera_world.transform.translation.z;
+    target_pose.position.x = cameraTargetPoint.x + pointOffset.x + transform_camera_base.transform.translation.x;
+    target_pose.position.y = cameraTargetPoint.y + pointOffset.y + transform_camera_base.transform.translation.y;
+    target_pose.position.z = cameraTargetPoint.z + pointOffset.z + transform_camera_base.transform.translation.z;
 
     RCLCPP_INFO(LOGGER, "UR_Pose after calculation");
     RCLCPP_INFO(LOGGER, "P_x: %f", target_pose.position.x);
