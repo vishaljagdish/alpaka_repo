@@ -1,0 +1,4 @@
+source;share/alpaka_test_tcp_description/local_setup.bash
+source;share/alpaka_test_tcp_description/local_setup.dsv
+source;share/alpaka_test_tcp_description/local_setup.sh
+source;share/alpaka_test_tcp_description/local_setup.zsh

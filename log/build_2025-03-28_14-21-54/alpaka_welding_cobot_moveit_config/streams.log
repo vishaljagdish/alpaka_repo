@@ -1,0 +1,51 @@
+[0.052s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake /home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit_config -DCMAKE_INSTALL_PREFIX=/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config
+[0.169s] -- The C compiler identification is GNU 11.4.0
+[0.281s] -- The CXX compiler identification is GNU 11.4.0
+[0.298s] -- Detecting C compiler ABI info
+[0.448s] -- Detecting C compiler ABI info - done
+[0.462s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.462s] -- Detecting C compile features
+[0.463s] -- Detecting C compile features - done
+[0.468s] -- Detecting CXX compiler ABI info
+[0.638s] -- Detecting CXX compiler ABI info - done
+[0.652s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.653s] -- Detecting CXX compile features
+[0.653s] -- Detecting CXX compile features - done
+[0.668s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.965s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.399s] -- Configuring done
+[1.402s] -- Generating done
+[1.412s] -- Build files have been written to: /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config
+[1.416s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake /home/alpaka-admin/my_alpaka_urdf_ws/src/alpaka_welding_cobot_moveit_config -DCMAKE_INSTALL_PREFIX=/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config
+[1.417s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config -- -j8 -l8
+[1.533s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake --build /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config -- -j8 -l8
+[1.534s] Invoking command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config
+[1.587s] -- Install configuration: ""
+[1.587s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config
+[1.587s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/kinematics.yaml
+[1.587s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
+[1.587s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/ompl_planning.yaml
+[1.587s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/ur_servo.yaml
+[1.589s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/joint_limits.yaml
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/pilz_cartesian_limits.yaml
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/config/controllers.yaml
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/srdf
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/srdf/ur.srdf.xacro
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/rviz
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/rviz/view_robot.rviz
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/ament_index/resource_index/package_run_dependencies/alpaka_welding_cobot_moveit_config
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/ament_index/resource_index/parent_prefix_path/alpaka_welding_cobot_moveit_config
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/environment/ament_prefix_path.sh
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/environment/ament_prefix_path.dsv
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/environment/path.sh
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/environment/path.dsv
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/local_setup.bash
+[1.590s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/local_setup.sh
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/local_setup.zsh
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/local_setup.dsv
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.dsv
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/ament_index/resource_index/packages/alpaka_welding_cobot_moveit_config
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/cmake/alpaka_welding_cobot_moveit_configConfig.cmake
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/cmake/alpaka_welding_cobot_moveit_configConfig-version.cmake
+[1.591s] -- Installing: /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_welding_cobot_moveit_config/share/alpaka_welding_cobot_moveit_config/package.xml
+[1.616s] Invoked command in '/home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alpaka-admin/ws_moveit2/install/moveit_configs_utils:/home/alpaka-admin/ws_moveit2/install/launch_param_builder:/opt/ros/humble ROS_DOMAIN_ID=32 /usr/bin/cmake --install /home/alpaka-admin/my_alpaka_urdf_ws/build/alpaka_welding_cobot_moveit_config

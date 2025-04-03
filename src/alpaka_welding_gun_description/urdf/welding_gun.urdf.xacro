@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<robot name="$(arg name)" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- import macros -->
+    <xacro:include filename="$(find alpaka_welding_gun_description)/urdf/welding_gun_macro.xacro"/>
+
+    <!--*****************************************************************************--> 
+
+    <!-- robot name parameter -->
+    <xacro:arg name="name" default="welding_gun"/>
+
+    <!-- parameters -->
+    <xacro:arg name="prefix" default="" />
+    <xacro:arg name="clamp_angle" default="0" />
+    <xacro:arg name="tourch_tilt" default="0" />
+
+    <!--*****************************************************************************-->
+
+    <!-- create base link -->
+    <link name="base_link"/>
+
+    <!-- chassis -->
+    <xacro:welding_gun prefix="$(arg prefix)" parent="base_link" clamp_angle="$(arg clamp_angle)" tourch_tilt="$(arg tourch_tilt)"/>
+
+</robot>

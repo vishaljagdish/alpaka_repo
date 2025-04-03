@@ -1,0 +1,38 @@
+[1.258s] Invoking command in '/home/alpaka-admin/ros2_ws/src/ml_model': PYTHONPATH=/home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ml_model build --build-base /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build install --record /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/install.log --single-version-externally-managed install_data
+[1.740s] running egg_info
+[1.741s] creating build/ml_model/ml_model.egg-info
+[1.741s] writing build/ml_model/ml_model.egg-info/PKG-INFO
+[1.741s] writing dependency_links to build/ml_model/ml_model.egg-info/dependency_links.txt
+[1.742s] writing entry points to build/ml_model/ml_model.egg-info/entry_points.txt
+[1.742s] writing requirements to build/ml_model/ml_model.egg-info/requires.txt
+[1.742s] writing top-level names to build/ml_model/ml_model.egg-info/top_level.txt
+[1.742s] writing manifest file 'build/ml_model/ml_model.egg-info/SOURCES.txt'
+[1.745s] reading manifest file 'build/ml_model/ml_model.egg-info/SOURCES.txt'
+[1.745s] adding license file 'LICENSE'
+[1.746s] writing manifest file 'build/ml_model/ml_model.egg-info/SOURCES.txt'
+[1.746s] running build
+[1.746s] running build_py
+[1.747s] creating /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build
+[1.747s] creating /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib
+[1.747s] creating /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib/ml_model
+[1.747s] copying ml_model/__init__.py -> /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib/ml_model
+[1.747s] copying ml_model/model.py -> /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib/ml_model
+[1.747s] running install
+[1.748s] running install_lib
+[1.748s] creating /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model
+[1.749s] copying /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib/ml_model/__init__.py -> /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model
+[1.749s] copying /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build/lib/ml_model/model.py -> /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model
+[1.749s] byte-compiling /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model/__init__.py to __init__.cpython-310.pyc
+[1.750s] byte-compiling /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model/model.py to model.cpython-310.pyc
+[1.751s] running install_data
+[1.751s] creating /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/share/ament_index
+[1.751s] creating /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/share/ament_index/resource_index
+[1.751s] creating /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/share/ament_index/resource_index/packages
+[1.751s] copying resource/ml_model -> /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/share/ament_index/resource_index/packages
+[1.751s] copying package.xml -> /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/share/ml_model
+[1.752s] running install_egg_info
+[1.754s] Copying build/ml_model/ml_model.egg-info to /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages/ml_model-0.0.0-py3.10.egg-info
+[1.755s] running install_scripts
+[1.786s] Installing model script to /home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/ml_model
+[1.787s] writing list of installed files to '/home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/install.log'
+[1.823s] Invoked command in '/home/alpaka-admin/ros2_ws/src/ml_model' returned '0': PYTHONPATH=/home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alpaka-admin/ros2_ws/src/ml_model/install/ml_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ml_model build --build-base /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/build install --record /home/alpaka-admin/ros2_ws/src/ml_model/build/ml_model/install.log --single-version-externally-managed install_data

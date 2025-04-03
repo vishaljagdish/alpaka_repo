@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+	<xacro:macro name="welding_gun" params="
+		prefix
+		parent
+		clamp_angle
+		tourch_tilt">
+
+		<!--Link definitions-->
+		<link name="${prefix}welding_gun_mount_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/visual/welding_gun_mount_link.STL" />
+				</geometry>
+				<material name="">
+					<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/collision/welding_gun_mount_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+
+		<link name="${prefix}welding_gun_clamp_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/visual/welding_gun_clamp_link.STL" />
+				</geometry>
+				<material name="">
+					<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/collision/welding_gun_clamp_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+
+		<link name="${prefix}welding_gun_tourch_link">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/visual/welding_gun_tourch_link.STL" />
+				</geometry>
+				<material name="">
+					<color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="package://alpaka_welding_gun_description/meshes/collision/welding_gun_tourch_link_collision.STL" />
+				</geometry>
+			</collision>
+		</link>
+
+		<link name="${prefix}welding_gun_nozzle_link">
+		</link>
+
+		<!--Joint  definitions-->
+
+		<joint name="${prefix}welding_gun_parent-mount_joint" type="fixed">
+			<parent link="${parent}"/>
+			<child link="${prefix}welding_gun_mount_link"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+		</joint>
+
+		<joint name="${prefix}welding_gun_mount-clamp_joint" type="fixed">
+			<parent link="${prefix}welding_gun_mount_link"/>
+			<child link="${prefix}welding_gun_clamp_link"/>
+			<origin xyz="0 -0.132832909582717 0.271179184756591" rpy="${-0.392699082+clamp_angle} 0 0"/>
+		</joint>
+
+		<joint name="${prefix}welding_gun_clamp-tourch_joint" type="fixed">
+			<parent link="${prefix}welding_gun_clamp_link" />
+			<child link="${prefix}welding_gun_tourch_link" />
+			<origin xyz="0 -0.0400000000000015 -0.0150000000000017" rpy="0 0 ${tourch_tilt}" />
+		</joint>
+
+		<joint name="${prefix}welding_gun_tourch-nozzle_joint" type="fixed">
+			<parent link="${prefix}welding_gun_tourch_link" />
+			<child link="${prefix}welding_gun_nozzle_link" />
+			<origin xyz="0.000638333791648683 0.0423667104625367 0.278295395140913" rpy="-0.392699081698696 0 0" />
+		</joint>
+
+	</xacro:macro>
+</robot>

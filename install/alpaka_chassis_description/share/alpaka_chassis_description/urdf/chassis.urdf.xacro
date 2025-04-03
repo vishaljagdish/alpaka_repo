@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="$(arg name)" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- import macros -->
+    <xacro:include filename="$(find alpaka_chassis_description)/urdf/chassis_macro.xacro"/>
+
+    <!--*****************************************************************************--> 
+
+    <!-- robot name parameter -->
+    <xacro:arg name="name" default="chassis"/>
+
+    <!-- parameters -->
+    <xacro:arg name="prefix" default="" />
+    <xacro:arg name="arm_angle" default="0" />
+
+    <!--*****************************************************************************-->
+
+    <!-- create base link -->
+    <link name="base_link"/>
+
+    <!-- chassis -->
+    <xacro:chassis prefix="$(arg prefix)" parent="base_link" arm_angle="$(arg arm_angle)"/>
+
+</robot>
