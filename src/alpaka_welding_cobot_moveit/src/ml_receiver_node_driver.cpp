@@ -120,6 +120,8 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     target_pose.orientation = this->multiplyQuaternion(nomQuaternion, transform_tcp_tool0.transform.rotation);
     pointOffset = this->multiplyQuaternion(nomQuaternion, pointOffset);
     pointOffset = this->multiplyQuaternion(pointOffset, this->inversQuaternion(nomQuaternion));
+    auto corrected_orientation = multiplyQuaternion(nomQuaternion, createRotationX180());
+    target_pose.orientation = corrected_orientation;
 
     RCLCPP_INFO(LOGGER, "PointOffset");
     RCLCPP_INFO(LOGGER, "P_x: %f", pointOffset.x);
