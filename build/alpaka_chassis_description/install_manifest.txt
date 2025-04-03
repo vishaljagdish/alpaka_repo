@@ -1,5 +1,5 @@
-/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual/chassis_base_link.STL
 /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual/chassis_arm_link.STL
+/home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/visual/chassis_base_link.STL
 /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/collision/chassis_base_link_collision.STL
 /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/meshes/collision/chassis_arm_link_collision.STL
 /home/alpaka-admin/my_alpaka_urdf_ws/install/alpaka_chassis_description/share/alpaka_chassis_description/urdf/chassis_macro.xacro

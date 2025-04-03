@@ -1,6 +1,6 @@
-/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch/ur.launch.py
 /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch/moveit.launch.py
 /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch/alpaka.launch.py
+/home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/launch/ur.launch.py
 /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup
 /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup
 /home/alpaka-admin/my_alpaka_urdf_ws/install/bringup/share/bringup/environment/ament_prefix_path.sh

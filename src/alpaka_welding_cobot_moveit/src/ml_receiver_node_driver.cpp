@@ -54,19 +54,7 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
         return;
     }
 
-    geometry_msgs::msg::PoseStamped current_pose;
-    current_pose = move_group_interface.getCurrentPose().pose;
-
-    // Print the current pose of the end effector
-    RCLCPP_INFO(node->get_logger(), "Current pose: X:%f Y:%f Z:%f x:%f y:%f z:%f w:%f",
-        current_pose.position.x,
-        current_pose.position.y,
-        current_pose.position.z,
-        current_pose.orientation.x,
-        current_pose.orientation.y,
-        current_pose.orientation.z,
-        current_pose.orientation.w);
-
+    
     RCLCPP_INFO(LOGGER, "TF Tcp Tool0");
     RCLCPP_INFO(LOGGER, "P_x: %f", transform_tcp_tool0.transform.translation.x);
     RCLCPP_INFO(LOGGER, "P_y: %f", transform_tcp_tool0.transform.translation.y);
@@ -93,8 +81,8 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     RCLCPP_INFO(LOGGER, "O_y: %f", transform_camera_base.transform.rotation.y);
     RCLCPP_INFO(LOGGER, "O_z: %f", transform_camera_base.transform.rotation.z);
     RCLCPP_INFO(LOGGER, "O_w: %f", transform_camera_base.transform.rotation.w);
-    
 
+    
     geometry_msgs::msg::Quaternion cameraTargetPoint;
     geometry_msgs::msg::Quaternion nomBaseCameraRot ;
 
@@ -122,15 +110,14 @@ void MlReceiverMoveitNode::onPointReceiveCallback(const geometry_msgs::msg::Poin
     pointOffset.y = transform_tcp_tool0.transform.translation.y;
     pointOffset.z = transform_tcp_tool0.transform.translation.z;
 
-    target_pose.orientation.x = 0.0;
-    target_pose.orientation.y = 0.0;
-    target_pose.orientation.z = 0.0;
-    target_pose.orientation.w = 1.0;
+    target_pose.orientation.x = transform_camera_base.transform.rotation.x;
+    target_pose.orientation.y = transform_camera_base.transform.rotation.y;
+    target_pose.orientation.z = transform_camera_base.transform.rotation.z;
+    target_pose.orientation.w = transform_camera_base.transform.rotation.w;
 
 
     nomQuaternion = normalizQuaternion(target_pose.orientation);
     target_pose.orientation = this->multiplyQuaternion(nomQuaternion, transform_tcp_tool0.transform.rotation);
-    //target_pose.orientation = this->multiplyQuaternion(target_pose.orientation, rotation_x_180);
     pointOffset = this->multiplyQuaternion(nomQuaternion, pointOffset);
     pointOffset = this->multiplyQuaternion(pointOffset, this->inversQuaternion(nomQuaternion));
 

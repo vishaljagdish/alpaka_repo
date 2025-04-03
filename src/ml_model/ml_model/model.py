@@ -25,6 +25,7 @@ def deproject(x, y, depth):
     y_proj = y_buf * depth
     return [x_proj, y_proj, depth]
 
+
 # Class definition
 class Model(Node):
     def __init__(self):
@@ -66,6 +67,7 @@ class Model(Node):
         self.z_buffer = deque(maxlen=BUFFER_SIZE)
         self.cv_image = None
         self.saved_points = []  # To store points where 's' was pressed
+        self.mouse_points = []  # To store points from mouse clicks
         
         # Initialize curses
         self.stdscr = curses.initscr()
@@ -74,11 +76,30 @@ class Model(Node):
         curses.noecho()
         self.stdscr.nodelay(True)
 
+        # Create OpenCV window and set mouse callback
+        cv2.namedWindow("Hand Tracking")
+        cv2.setMouseCallback("Hand Tracking", self.mouse_callback)
+
     def __del__(self):
         curses.nocbreak()
         self.stdscr.keypad(False)
         curses.echo()
         curses.endwin()
+
+    def mouse_callback(self, event, x, y, flags, param):
+        if event == cv2.EVENT_LBUTTONDOWN:
+            if self.latest_depth_image is not None:
+                depth_value = self.latest_depth_image[y, x] * 0.001
+                if depth_value > 0:
+                    self.mouse_points.append((x, y))
+                    deprojected_point = deproject(x, y, depth_value)
+                    
+                    msg = Point()
+                    msg.x = deprojected_point[0]
+                    msg.y = deprojected_point[1]
+                    msg.z = deprojected_point[2]
+                    
+                    self.publish_points.publish(msg)
 
     def image_callback(self, msg):
         self.cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
@@ -93,9 +114,13 @@ class Model(Node):
 
                 cv2.circle(display_image, (self.x, self.y), 5, (0, 255, 0), -1)
 
-        # Draw all saved points
+        # Draw all saved points (from 's' key)
         for point in self.saved_points:
             cv2.circle(display_image, (point[0], point[1]), 4, (255, 0, 0), -1)
+            
+        # Draw all mouse click points
+        for point in self.mouse_points:
+            cv2.circle(display_image, (point[0], point[1]), 4, (0, 0, 255), -1)  # Red circles for mouse points
 
         cv2.imshow("Hand Tracking", display_image)
         cv2.waitKey(1)
@@ -105,10 +130,6 @@ class Model(Node):
 
         if self.x is not None and self.y is not None:
             depth_values = []
-            #for dy in [-1, 0, 1]:
-            #    for dx in [-1, 0, 1]:
-            #        px = max(0, min(self.x + dx, 639))
-            #       py = max(0, min(self.y + dy, 479))
             depth_value = self.latest_depth_image[self.y, self.x]
 
             if depth_value > 0:
