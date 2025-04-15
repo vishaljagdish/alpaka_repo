@@ -5,6 +5,10 @@ static const std::string PLANNING_GROUP = "ur_manipulator";
 
 static const rclcpp::Logger LOGGER = rclcpp::get_logger("alpaka_welding_cobot_moveit");
 
+double deg2rad(double joint_angle){
+  return joint_angle * (M_PI/180.0);
+}
+
 int main(int argc, char **argv) {
   rclcpp::init(argc, argv);
   rclcpp::NodeOptions node_options;
@@ -31,15 +35,15 @@ int main(int argc, char **argv) {
   move_group_arm.setMaxVelocityScalingFactor(0.1);  // Adjust this value (0.0-1.0)
   //go home
   RCLCPP_INFO(LOGGER, "going home");
-  joint_group_positions_arm[0] = 1.0411;
-  joint_group_positions_arm[1] = 0.5191;
-  joint_group_positions_arm[2] = -1.5423; 
-  joint_group_positions_arm[3] = -0.1065;
-  joint_group_positions_arm[4] = 0.8487;
-  joint_group_positions_arm[5] = 0.5561;
+  joint_group_positions_arm[0] = deg2rad(45.05);
+  joint_group_positions_arm[1] = deg2rad(31.22);
+  joint_group_positions_arm[2] = deg2rad(-89.05); 
+  joint_group_positions_arm[3] = deg2rad(-5.75);
+  joint_group_positions_arm[4] = deg2rad(67.31);
+  joint_group_positions_arm[5] = deg2rad(25.79);
 
   move_group_arm.setJointValueTarget(joint_group_positions_arm);
-
+  move_group_arm.setPlanningTime(5.0);   
   moveit::planning_interface::MoveGroupInterface::Plan my_plan_arm;
 
   bool success_arm = (move_group_arm.plan(my_plan_arm) == moveit::core::MoveItErrorCode::SUCCESS);
@@ -47,22 +51,22 @@ int main(int argc, char **argv) {
   move_group_arm.execute(my_plan_arm);
 
   geometry_msgs::msg::Pose target_pose1;
-  target_pose1.position.x = -0.002037;
-  target_pose1.position.y = -1.097061;
-  target_pose1.position.z = 0.697058;
-  target_pose1.orientation.x = 0.356231; 
-  target_pose1.orientation.y = 0.189883;
-  target_pose1.orientation.z = 0.093213;
-  target_pose1.orientation.w = 0.910140;
+  target_pose1.position.x = -0.658431;
+  target_pose1.position.y = -1.030103;
+  target_pose1.position.z = 0.685928;
+  target_pose1.orientation.x = 0.293958; 
+  target_pose1.orientation.y = 0.025905;
+  target_pose1.orientation.z = -0.116543;
+  target_pose1.orientation.w = 0.948333;
 
   geometry_msgs::msg::Pose target_pose2;
-  target_pose2.position.x = -0.135309;
-  target_pose2.position.y = -1.232684;
-  target_pose2.position.z = 0.698240;
-  target_pose2.orientation.x = 0.356219; 
-  target_pose2.orientation.y = 0.189880;
-  target_pose2.orientation.z = 0.093212;
-  target_pose2.orientation.w = 0.910146;  
+  target_pose2.position.x = -0.479880;
+  target_pose2.position.y = -1.114142;
+  target_pose2.position.z = 0.682587;
+  target_pose2.orientation.x = 0.293955; 
+  target_pose2.orientation.y = 0.025916;
+  target_pose2.orientation.z = -0.116534;
+  target_pose2.orientation.w = 0.948335;  
 
   std::vector<geometry_msgs::msg::Pose> approach_waypoints;
   approach_waypoints.push_back(target_pose1);
@@ -73,8 +77,11 @@ int main(int argc, char **argv) {
   const double eef_step = 0.01;
 
   double fraction = move_group_arm.computeCartesianPath(approach_waypoints, eef_step, jump_threshold, trajectory_approach);
-  RCLCPP_INFO(LOGGER, "move");
+  RCLCPP_INFO(LOGGER, "move");  
   move_group_arm.execute(trajectory_approach);
+  rclcpp::sleep_for(std::chrono::seconds(1));
+  RCLCPP_INFO(LOGGER, "going home again ;)");
+  move_group_arm.execute(my_plan_arm);
 
   rclcpp::shutdown();
   return 0;
